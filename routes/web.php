@@ -16,3 +16,10 @@ use App\Http\Controllers\TemplateController;
 
 
 route::get('/',[TemplateController::class,'index']);
+route::get('/connexion',function(){
+    return view('frontend.connexion');
+});
+route::get('/registre',function(){
+    return view('frontend.registre');
+});
+route::get('/connexion','ConnexionController@index')->name('connexion');
