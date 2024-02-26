@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+  <head>    
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-    <title>Hexashop - Product Listing Page</title>
+    <title>Matchy Look</title>
 
 
     <!-- Additional CSS Files -->
@@ -64,7 +64,6 @@ https://templatemo.com/tm-571-hexashop
                             <li class="scroll-to-section"><a href="index.html" class="active">Accueil</a></li>
                             <li class="scroll-to-section"><a href="index.html">Homme</a></li>
                             <li class="scroll-to-section"><a href="index.html">Femme</a></li>
-                            <li class="scroll-to-section"><a href="index.html">Connexion</a></li>
                             <li class="submenu">
                                 <a href="javascript:;">Collection</a>
                                 <ul>
@@ -74,6 +73,7 @@ https://templatemo.com/tm-571-hexashop
                                     <li><a rel="nofollow" href="https://templatemo.com/page/4" target="_blank">Template Page 4</a></li>
                                 </ul>
                             </li>
+                            <li class="scroll-to-section"><a href="{{route('connexion')}}">Connexion</a></li>
                             <li class="scroll-to-section"><a href="index.html">a propos</a></li>
                         </ul>        
                         <a class='menu-trigger'>
