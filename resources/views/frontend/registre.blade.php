@@ -1,7 +1,8 @@
 @extends('layouts.menu')
     @section('content')
     <!-- ***** Main Banner Area Start ***** -->
-    
+    <div class="main-banner" id="top">
+        <div class="container-fluid">
     <!-- ***** Main Banner Area End ***** -->
 
 
@@ -29,7 +30,7 @@
 					</div>
 					<div class="form-wrapper">
 						<select name="" id="" class="form-control">
-							<option value="" disabled selected>Gender</option>
+							<option value="" disabled selected>sexe</option>
 							<option value="male">homme</option>
 							<option value="femal">femme</option>
 						
@@ -41,10 +42,10 @@
 						<i class="zmdi zmdi-lock"></i>
 					</div>
 					<div class="form-wrapper">
-						<input type="password" placeholder="Confirm Password" class="form-control">
+						<input type="password" placeholder="Confirmez le mot de passe" class="form-control">
 						<i class="zmdi zmdi-lock"></i>
 					</div>
-					<button>Register
+					<button>S'inscrire
 						<i class="zmdi zmdi-arrow-right"></i>
 					</button>
 				</form>

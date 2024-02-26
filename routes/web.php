@@ -22,3 +22,6 @@ route::get('/connexion',function(){
 route::get('/registre',function(){
     return view('frontend.registre');
 });
+route::get('/master',function(){
+    return view('frontend.master');
+})->name('master');

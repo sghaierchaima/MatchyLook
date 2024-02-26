@@ -61,7 +61,7 @@ https://templatemo.com/tm-571-hexashop
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="index.html" class="active">Accueil</a></li>
+                            <li class="scroll-to-section"><a href="{{route('master')}}" class="active">Accueil</a></li>
                             <li class="scroll-to-section"><a href="index.html">Homme</a></li>
                             <li class="scroll-to-section"><a href="index.html">Femme</a></li>
                             <li class="submenu">
@@ -75,6 +75,8 @@ https://templatemo.com/tm-571-hexashop
                             </li>
                             <li class="scroll-to-section"><a href="{{route('connexion')}}">Connexion</a></li>
                             <li class="scroll-to-section"><a href="index.html">a propos</a></li>
+                            <li class="scroll-to-section"><a href="index.html">Avatar</a></li>
+
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
