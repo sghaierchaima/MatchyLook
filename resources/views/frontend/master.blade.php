@@ -10,7 +10,7 @@
                     <div class="left-content">
                         <div class="thumb">
                             <div class="inner-content">
-                                <h4>We Are Hexashop</h4>
+                                <h4>Nous Sommes Matchy Look</h4>
                                 <span>Awesome, clean &amp; creative HTML5 Template</span>
                                 <div class="main-border-button">
                                     <a href="#">Purchase Now!</a>
@@ -27,15 +27,14 @@
                                 <div class="right-first-image">
                                     <div class="thumb">
                                         <div class="inner-content">
-                                            <h4>Women</h4>
-                                            <span>Best Clothes For Women</span>
+                                            <h4>Femme</h4>
+                                            <span>Meilleurs vêtements  pour Femme</span>
                                         </div>
                                         <div class="hover-content">
                                             <div class="inner">
-                                                <h4>Women</h4>
-                                                <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                                <h4>Femme</h4>
                                                 <div class="main-border-button">
-                                                    <a href="#">Discover More</a>
+                                                    <a href="#">Découvrir plus</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -47,15 +46,14 @@
                                 <div class="right-first-image">
                                     <div class="thumb">
                                         <div class="inner-content">
-                                            <h4>Men</h4>
-                                            <span>Best Clothes For Men</span>
+                                            <h4>Homme</h4>
+                                            <span>Meilleurs vêtements  pour Homme </span>
                                         </div>
                                         <div class="hover-content">
                                             <div class="inner">
                                                 <h4>Men</h4>
-                                                <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
                                                 <div class="main-border-button">
-                                                    <a href="#">Discover More</a>
+                                                    <a href="#">Découvrir plus</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -68,14 +66,15 @@
                                     <div class="thumb">
                                         <div class="inner-content">
                                             <h4>Promotion</h4>
-                                            <span>Meilleur Promo  </span>
+                                            <span>Meilleure Promo 
+                                            </span>
                                         </div>
                                         <div class="hover-content">
                                             <div class="inner">
                                                 <h4>Promotion</h4>
                                                 <p>Promotion d'Hiver 2024</p>
                                                 <div class="main-border-button">
-                                                    <a href="#">Discover More</a>
+                                                    <a href="#">Découvrir plus</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -95,7 +94,7 @@
                                                 <h4>Hiver 2024</h4>
                                                 <p>Hiver 2024</p>
                                                 <div class="main-border-button">
-                                                    <a href="#">Discover More</a>
+                                                    <a href="#">Découvrir plus</a>
                                                 </div>
                                             </div>
                                         </div>
