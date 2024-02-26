@@ -19,9 +19,16 @@ route::get('/',[TemplateController::class,'index']);
 route::get('/connexion',function(){
     return view('frontend.connexion');
 })->name('connexion');
+
+route::get('/masthiverer',function(){
+    return view('frontend.hiver');
+})->name('hiver');
+
+
 route::get('/registre',function(){
     return view('frontend.registre');
 });
 route::get('/master',function(){
     return view('frontend.master');
 })->name('master');
+
