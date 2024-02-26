@@ -18,8 +18,10 @@ use App\Http\Controllers\TemplateController;
 route::get('/',[TemplateController::class,'index']);
 route::get('/connexion',function(){
     return view('frontend.connexion');
-});
+})->name('connexion');
 route::get('/registre',function(){
     return view('frontend.registre');
 });
-route::get('/connexion','ConnexionController@index')->name('connexion');
+route::get('/master',function(){
+    return view('frontend.master');
+})->name('master');

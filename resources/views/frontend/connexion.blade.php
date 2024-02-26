@@ -1,4 +1,46 @@
 @extends('layouts.menu')
-@section('content')
+    @section('content')
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <div class="container-fluid">
+    <!-- ***** Main Banner Area End ***** -->
 
-@endsection
+
+    <!-- ***** Products Area Starts ***** -->
+   
+                 
+    <div class="wrapper" style="background-image: url('assets/images/bg-registration-form-1.jpg');">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="assets/images/registre.jpg" alt="">
+				</div>
+				<form action="">
+					<h3>Connexion</h3>
+                    <br>
+					<div class="form-wrapper">
+						<input type="text" placeholder="Address Email" class="form-control">
+						<i class="zmdi zmdi-email"></i>
+					</div>
+					
+					<div class="form-wrapper">
+						<input type="password" placeholder="Mots de passe" class="form-control">
+						<i class="zmdi zmdi-lock"></i>
+					</div>
+					
+					<button>connexion
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+                    <div _ngcontent-serverapp-c72="" class="line" style="display: flex; align-items: center;">
+                       <hr _ngcontent-serverapp-c72="" style="flex-grow: 1; border: 0; border-top: 1px solid gray;">
+                       <span _ngcontent-serverapp-c72="" class="option-text" style="margin: 0 10px;">OU</span>
+                       <hr _ngcontent-serverapp-c72="" style="flex-grow: 1; border: 0; border-top: 1px solid gray;">
+                    </div>
+
+                   <!--  <button ><a  href="{{ url('registre') }}"style="color: white;">S'inscrire</a>
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button> -->
+                    <span>Si vous n'avez pas de compte, <a href="{{ url('registre') }}">inscrivez-vous</a>.</span>
+				</form>
+			</div>
+		</div>     
+@endsection                  
