@@ -31,4 +31,7 @@ route::get('/registre',function(){
 route::get('/master',function(){
     return view('frontend.master');
 })->name('master');
+route::get('/about',function(){
+    return view('frontend.about');
+})->name('about');
 

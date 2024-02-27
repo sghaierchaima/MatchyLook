@@ -55,7 +55,7 @@ https://templatemo.com/tm-571-hexashop
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
+                        <a href="{{route('master')}}" class="logo">
                             <img src="assets/images/OL.jpg">
                         </a>
                         <!-- ***** Logo End ***** -->
@@ -75,7 +75,7 @@ https://templatemo.com/tm-571-hexashop
                                 </ul>
                             </li>
                             <li class="scroll-to-section"><a href="{{route('connexion')}}">Connexion</a></li>
-                            <li class="scroll-to-section"><a href="index.html">a propos</a></li>
+                            <li class="scroll-to-section"><a href="{{route('about')}}">a propos</a></li>
                             <li class="scroll-to-section"><a href="index.html">Avatar</a></li>
 
                         </ul>        
@@ -103,66 +103,62 @@ https://templatemo.com/tm-571-hexashop
 
 
 
-<!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="first-item">
-                        <div class="logo">
-                            <img src="assets/images/logo1.jpg" alt="hexashop ecommerce templatemo">
-                        </div>
-                        <ul>
-                            <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
-                            <li><a href="#">hexashop@company.com</a></li>
-                            <li><a href="#">010-020-0340</a></li>
-                        </ul>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="first-item">
+                    <div class="logo">
+                    <img src="assets/images/OL.jpg">
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <h4>Shopping &amp; Categories</h4>
                     <ul>
-                        <li><a href="#">Men’s Shopping</a></li>
-                        <li><a href="#">Women’s Shopping</a></li>
-                        <li><a href="#">Kid's Shopping</a></li>
+                        <!-- <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, États-Unis</a></li> -->
+                       <!--  <li><a href="#">hexashop@company.com</a></li>
+                        <li><a href="#">010-020-0340</a></li> -->
                     </ul>
                 </div>
-                <div class="col-lg-3">
-                    <h4>Useful Links</h4>
+            </div>
+            <div class="col-lg-3">
+                <h4>Achats &amp; Catégories</h4>
+                <ul>
+                    <li><a href="#">Achats pour hommes</a></li>
+                    <li><a href="#">Achats pour femmes</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4>Liens utiles</h4>
+                <ul>
+                    <li><a href="#">Page d'accueil</a></li>
+                    <li><a href="#">À propos de nous</a></li>
+                   
+                </ul>
+            </div>
+            <div class="col-lg-3">
+            <h4>Contacter nous</h4>
+                <ul>
+                    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> MatchyLook@gmail.com</a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"> Matchy Look</i></a></li>
+                   
+                </ul>
+            </div>
+            
+            
+            <div class="col-lg-12">
+                <div class="under-footer">
+                    <p>Droits d'auteur © 2024.
                     <ul>
-                        <li><a href="#">Homepage</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
                     </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h4>Help &amp; Information</h4>
-                    <ul>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">FAQ's</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Tracking ID</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-12">
-                    <div class="under-footer">
-                        <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved. 
-                        
-                        <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
-    </footer>
-    
-
+    </div>
+</footer>
+<!-- ***** Fin du pied de page ***** -->
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
 

@@ -33,6 +33,7 @@
                                         <div class="hover-content">
                                             <div class="inner">
                                                 <h4>Femme</h4>
+                                                <p></p>
                                                 <div class="main-border-button">
                                                     <a href="#">Découvrir plus</a>
                                                 </div>
