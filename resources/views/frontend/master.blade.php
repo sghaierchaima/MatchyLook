@@ -137,11 +137,11 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/men-01.jpg" alt="">
+                                    <img src="assets/images/homme_pull/4.jpg" alt="">
                                 </div>
                                 <div class="down-content">
                                     <h4>Classic Spring</h4>
-                                    <span>$120.00</span>
+                                    <span>120.00-dt</span>
                                     <ul class="stars">
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
@@ -160,11 +160,11 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/men-02.jpg" alt="">
+                                    <img src="assets/images/homme_pull/3.jpg" alt="">
                                 </div>
                                 <div class="down-content">
                                     <h4>Air Force 1 X</h4>
-                                    <span>$90.00</span>
+                                    <span>90.00-dt</span>
                                     <ul class="stars">
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
@@ -183,11 +183,11 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/men-03.jpg" alt="">
+                                    <img src="assets/images/homme_pull/2.jpg" alt="">
                                 </div>
                                 <div class="down-content">
-                                    <h4>Love Nana ‘20</h4>
-                                    <span>$150.00</span>
+                                    <h4>Capuche Vert </h4>
+                                    <span>150.00-dt</span>
                                     <ul class="stars">
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
@@ -206,11 +206,11 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/men-01.jpg" alt="">
+                                    <img src="assets/images/homme_pull/1.jpg" alt="">
                                 </div>
                                 <div class="down-content">
-                                    <h4>Classic Spring</h4>
-                                    <span>$120.00</span>
+                                    <h4>Classic </h4>
+                                    <span>120.00-dt</span>
                                     <ul class="stars">
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
@@ -254,11 +254,11 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/women-01.jpg" alt="">
+                                    <img src="assets/images/femme_pull/1.jpg" alt="">
                                 </div>
                                 <div class="down-content">
-                                    <h4>New Green Jacket</h4>
-                                    <span>$75.00</span>
+                                    <h4>Nouvelle Pull Vert</h4>
+                                    <span>75.00-dt</span>
                                     <ul class="stars">
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
@@ -277,11 +277,11 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/women-02.jpg" alt="">
+                                    <img src="assets/images/femme_pull/3.jpg" alt="">
                                 </div>
                                 <div class="down-content">
-                                    <h4>Classic Dress</h4>
-                                    <span>$45.00</span>
+                                    <h4>Chemise noire </h4>
+                                    <span>45.00-dt</span>
                                     <ul class="stars">
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
@@ -300,11 +300,11 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/women-03.jpg" alt="">
+                                    <img src="assets/images/femme_pull/22.jpg" alt="">
                                 </div>
                                 <div class="down-content">
-                                    <h4>Spring Collection</h4>
-                                    <span>$130.00</span>
+                                    <h4>Collection d'hiver</h4>
+                                    <span>130.00-dt</span>
                                     <ul class="stars">
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
@@ -323,11 +323,11 @@
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/women-01.jpg" alt="">
+                                    <img src="assets/images/femme_pull/33.jpg" alt="">
                                 </div>
                                 <div class="down-content">
-                                    <h4>Classic Spring</h4>
-                                    <span>$120.00</span>
+                                    <h4>Classic </h4>
+                                    <span>120.00-dt</span>
                                     <ul class="stars">
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>

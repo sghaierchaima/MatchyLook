@@ -71,7 +71,6 @@ https://templatemo.com/tm-571-hexashop
                                     <li><a href="#">Collection Printemps</a></li>
                                     <li><a href="#">Collection Automne</a></li>
                                     <li><a href="#">Collection d'Été </a></li>
-                                    <li><a rel="nofollow" href="https://templatemo.com/page/4" target="_blank">Template Page 4</a></li>
                                 </ul>
                             </li>
                             <li class="scroll-to-section"><a href="{{route('connexion')}}">Connexion</a></li>
