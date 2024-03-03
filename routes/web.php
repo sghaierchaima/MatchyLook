@@ -34,4 +34,15 @@ route::get('/master',function(){
 route::get('/about',function(){
     return view('frontend.about');
 })->name('about');
-
+route::get('/homme',function(){
+    return view('frontend.homme');
+})->name('homme');
+route::get('/femme',function(){
+    return view('frontend.femme');
+})->name('femme');
+route::get('/pullhomme',function(){
+    return view('frontend.pullHomme');
+})->name('pullHomme');
+route::get('/pantalonHomme',function(){
+    return view('frontend.pantalon');
+})->name('pantalonHomme');
