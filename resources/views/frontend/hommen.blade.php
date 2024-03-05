@@ -21,8 +21,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="inner-content">
-                        <h2>Check Our Products</h2>
-                        <span>Awesome &amp; Creative HTML CSS layout by TemplateMo</span>
+                        <h2>Consultez nos produits</h2>
+                        
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@
     selectedElement.classList.add('filter-active');
     var selectedLink = selectedElement.querySelector('.filter-link');
     if (selectedLink) {
-      selectedLink.style.color = 'blue'; // Changer la couleur du lien à bleu
+      selectedLink.style.color = 'black'; // Changer la couleur du lien à bleu
     }
   }
 }
@@ -147,7 +147,14 @@
       var selectedElement = document.getElementById(selectedCategory);
       if (selectedElement) {
         selectedElement.classList.add('filter-active');
-        selectedElement.querySelector('.filter-link').style.color = 'blue';
+        selectedElement.querySelector('.filter-link').style.color = 'black';
+      }
+    } else {
+      // Si aucun élément n'est sélectionné, mettre en surbrillance "All"
+      var allElement = document.getElementById('all');
+      if (allElement) {
+        allElement.classList.add('filter-active');
+        allElement.querySelector('.filter-link').style.color = 'black';
       }
     }
   });
