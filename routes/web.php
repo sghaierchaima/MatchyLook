@@ -39,10 +39,17 @@ route::get('/homme',function(){
 })->name('homme');
 route::get('/femme',function(){
     return view('frontend.femme');
-})->name('femme');
+})->name('Femme');
 route::get('/pullhomme',function(){
     return view('frontend.pullHomme');
 })->name('pullHomme');
 route::get('/pantalonHomme',function(){
     return view('frontend.pantalon');
 })->name('pantalonHomme');
+
+route::get('/femme_pull',function(){
+    return view('frontend.femme_pull');
+})->name('femme_pull');
+route::get('/femme_pantalon',function(){
+    return view('frontend.femme_pantalon');
+})->name('femme_pantalon');

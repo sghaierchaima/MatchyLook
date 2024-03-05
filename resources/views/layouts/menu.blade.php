@@ -69,8 +69,14 @@ https://templatemo.com/tm-571-hexashop
                                     <li><a href="{{route('pantalonHomme')}}">Pantallon</a></li>
                                 </ul>
                             </li>
-                            <li class="scroll-to-section"><a href="{{route('femme')}}">Femme</a></li>
-                            <li class="submenu">
+
+<li class="submenu">
+                                <a href="{{route('Femme')}}">Femme</a>
+                                <ul>
+                                    <li><a href="{{route('femme_pull')}}">Pull </a></li>
+                                    <li><a href="{{route('femme_pantalon')}}">Pantallon</a></li>
+                                </ul>
+                            </li>                            <li class="submenu">
                                 <a href="javascript:;">Collection</a>
                                 <ul>
                                     <li><a href="{{route('hiver')}}">Collection Hiver</a></li>
