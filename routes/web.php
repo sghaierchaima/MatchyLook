@@ -46,7 +46,6 @@ route::get('/pullhomme',function(){
 route::get('/pantalonHomme',function(){
     return view('frontend.pantalon');
 })->name('pantalonHomme');
-<<<<<<< HEAD
 
 route::get('/femme_pull',function(){
     return view('frontend.femme_pull');
@@ -54,8 +53,6 @@ route::get('/femme_pull',function(){
 route::get('/femme_pantalon',function(){
     return view('frontend.femme_pantalon');
 })->name('femme_pantalon');
-=======
 route::get('/hommen',function(){
     return view('frontend.hommen');
 })->name('hommen');
->>>>>>> 8b289ce0b1dd88ca9d5b46f4988da69d04e44cea
