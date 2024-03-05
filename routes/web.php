@@ -34,9 +34,9 @@ route::get('/master',function(){
 route::get('/about',function(){
     return view('frontend.about');
 })->name('about');
-route::get('/homme',function(){
-    return view('frontend.homme');
-})->name('homme');
+route::get('/all',function(){
+    return view('frontend.all');
+})->name('all');
 route::get('/femme',function(){
     return view('frontend.femme');
 })->name('femme');
@@ -46,3 +46,6 @@ route::get('/pullhomme',function(){
 route::get('/pantalonHomme',function(){
     return view('frontend.pantalon');
 })->name('pantalonHomme');
+route::get('/hommen',function(){
+    return view('frontend.hommen');
+})->name('hommen');

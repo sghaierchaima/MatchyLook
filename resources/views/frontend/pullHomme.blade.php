@@ -1,19 +1,5 @@
-@extends('layouts.menu')
-    @section('content')
-
-    <div class="page-heading" id="top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="inner-content">
-                        <h2>Check Our Products</h2>
-                        <span>Awesome &amp; Creative HTML CSS layout by TemplateMo</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-   
+@extends('frontend.hommen')
+    @section('homme')
 <!-- ***** Main Banner Area End ***** -->
 <section class="section" id="pull">
         <div class="container">
@@ -488,6 +474,21 @@
         </div>
     </section>
 
+<!-- Sur la page pullHomme.blade.php -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var selectedCategory = urlParams.get('selected');
+
+    if (selectedCategory) {
+      var selectedElement = document.getElementById(selectedCategory);
+      if (selectedElement) {
+        selectedElement.classList.add('filter-active');
+        selectedElement.querySelector('.filter-link').style.color = 'blue';
+      }
+    }
+  });
+</script>
 
 
     @endsection  

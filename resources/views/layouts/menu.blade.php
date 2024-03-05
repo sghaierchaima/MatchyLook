@@ -62,13 +62,14 @@ https://templatemo.com/tm-571-hexashop
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="{{route('master')}}" class="active">Accueil</a></li>
-                            <li class="submenu">
-                                <a href="{{route('homme')}}">Homme</a>
+                            <li class="scroll-to-section"><a href="{{route('all')}}">Homme</a></li>
+                            <!-- <li class="submenu">
+                                <a href="{{route('all')}}">Homme</a>
                                 <ul>
                                     <li><a href="{{route('pullHomme')}}">Pulls&Polos</a></li>
                                     <li><a href="{{route('pantalonHomme')}}">Pantallon</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li class="scroll-to-section"><a href="{{route('femme')}}">Femme</a></li>
                             <li class="submenu">
                                 <a href="javascript:;">Collection</a>
