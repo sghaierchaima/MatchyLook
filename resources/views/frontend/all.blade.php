@@ -1,15 +1,15 @@
-@extends('layouts.menu')
-    @section('content')
+@extends('frontend.hommen')
+    @section('homme')
+    <div class="all">
+    @yield('all')
 
-
- <!-- ***** Main Banner Area Start ***** -->
- 
+</div>
  <section class="section" id="men">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-heading">
-                        <h2><a href="{{route('pullHomme')}}">Pulls&Pollos</a> </h2>
+                        <h2>Pulls&Pollos </h2>
                         <span>-----------------------</span>
                     </div>
                 </div>
@@ -129,7 +129,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-heading">
-                        <h2><a href="{{route('pantalonHomme')}}">Pantalon</a> </h2>
+                        <h2>Pantalon</h2>
                         <span>-----------------------</span>
                     </div>
                 </div>
@@ -238,5 +238,15 @@
             </div>
         </div>
     </section>
+    <script src="assets/vendorh/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendorh/aos/aos.js"></script>
+  <script src="assets/vendorh/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendorh/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendorh/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendorh/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendorh/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/jsh/main.js"></script>
     <!-- ***** Men Area Ends ***** -->
     @endsection  
