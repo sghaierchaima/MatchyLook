@@ -53,6 +53,11 @@ route::get('/femme_pull',function(){
 route::get('/femme_pantalon',function(){
     return view('frontend.femme_pantalon');
 })->name('femme_pantalon');
+route::get('/femmen',function(){
+    return view('frontend.hommen');
+})->name('femmen');
+
+
 route::get('/hommen',function(){
     return view('frontend.hommen');
 })->name('hommen');

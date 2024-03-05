@@ -25,8 +25,13 @@
     <link rel="stylesheet" href="assets/fontsr/material-design-iconic-font/css/material-design-iconic-font.min.css">
 		<!-- STYLE CSS -->
 		<link rel="stylesheet" href="assets/css/registre.css">
-	</head>
-<!--
+<style>
+dotlottie-player {
+    width: 250px !important; /* nouvelle largeur */
+  height: 250px !important;
+    margin: auto; /* pour centrer l'élément horizontalement */
+    display: block; /* pour centrer l'élément horizontalement */
+  }</style><!--
 
 TemplateMo 571 Hexashop
 
@@ -63,15 +68,16 @@ https://templatemo.com/tm-571-hexashop
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="{{route('master')}}" class="active">Accueil</a></li>
                             <li class="scroll-to-section"><a href="{{route('all')}}">Homme</a></li>
+                            <li class="scroll-to-section"><a href="{{route('Femme')}}">Femme</a></li>
+
                             <!-- <li class="submenu">
                                 <a href="{{route('all')}}">Homme</a>
                                 <ul>
                                     <li><a href="{{route('pullHomme')}}">Pulls&Polos</a></li>
                                     <li><a href="{{route('pantalonHomme')}}">Pantallon</a></li>
                                 </ul>
-<<<<<<< HEAD
                             </li>
-
+                            
 <li class="submenu">
                                 <a href="{{route('Femme')}}">Femme</a>
                                 <ul>
@@ -79,11 +85,10 @@ https://templatemo.com/tm-571-hexashop
                                     <li><a href="{{route('femme_pantalon')}}">Pantallon</a></li>
                                 </ul>
                             </li>                            <li class="submenu">
-=======
+
                             </li> -->
-                            <li class="scroll-to-section"><a href="{{route('femme')}}">Femme</a></li>
+                            
                             <li class="submenu">
->>>>>>> 8b289ce0b1dd88ca9d5b46f4988da69d04e44cea
                                 <a href="javascript:;">Collection</a>
                                 <ul>
                                     <li><a href="{{route('hiver')}}">Collection Hiver</a></li>
@@ -166,15 +171,16 @@ https://templatemo.com/tm-571-hexashop
                 <div class="under-footer">
                     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
-                    <p>Droits d'auteur © 2024.
-                    <ul>
+                   
+                    <!--<ul>
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                         <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                        <dotlottie-player src="https://lottie.host/3333dc79-e7b7-4704-a62e-47e1b15bee0e/9Ss40EQIXc.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
 
-                    </ul>
+                    </ul>-->
+                    <dotlottie-player src="https://lottie.host/3333dc79-e7b7-4704-a62e-47e1b15bee0e/9Ss40EQIXc.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                    <p>Droits d'auteur © 2024.</p>
                 </div>
             </div>
         </div>
