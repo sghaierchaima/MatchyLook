@@ -157,12 +157,16 @@ https://templatemo.com/tm-571-hexashop
             
             <div class="col-lg-12">
                 <div class="under-footer">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
                     <p>Droits d'auteur © 2024.
                     <ul>
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                         <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <dotlottie-player src="https://lottie.host/3333dc79-e7b7-4704-a62e-47e1b15bee0e/9Ss40EQIXc.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+
                     </ul>
                 </div>
             </div>
