@@ -25,8 +25,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="inner-content">
+                      <div class="go">
                        <h4> Chaque Femme </h4><span>mérite de se sentir belle et confiante, découvrez nos collections conçues pour mettre en valeur votre beauté naturelle.</h2>
-                       </span>
+                       </span></div>
                     </div>
                 </div>
             </div>
