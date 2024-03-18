@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TemplateController;
+use App\Http\Controllers\CustomAuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +17,15 @@ use App\Http\Controllers\TemplateController;
 
 
 route::get('/',[TemplateController::class,'index']);
+route::get('/login',[CustomAuthController::class,'inscrire']);
+route::post('/registerUser',[CustomAuthController::class,'registerUser'])->name('registerUser');
+route::post('connexionUser',[CustomAuthController::class,'connexionUser'])->name('connexionUser');
+
+
+
+
+
+
 route::get('/connexion',function(){
     return view('frontend.connexion');
 })->name('connexion');
