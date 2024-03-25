@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\CategoriesC;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,10 +17,22 @@ use App\Http\Controllers\CustomAuthController;
 
 
 
-route::get('/',[TemplateController::class,'index']);
+route::get('/',[TemplateController::class,'index']); 
 route::get('/login',[CustomAuthController::class,'inscrire']);
 route::post('/registerUser',[CustomAuthController::class,'registerUser'])->name('registerUser');
 route::post('connexionUser',[CustomAuthController::class,'connexionUser'])->name('connexionUser');
+Route::get('/admin',[CustomAuthController::class,'admin']);
+Route::get('categorie',[CategoriesC::class,"index"]);
+Route::get('masterr', [CategoriesC::class, 'indexe']);
+Route::get('ajouterC', [CategoriesC::class, 'ajouterCategory']);
+Route::post('saveCategory', [CategoriesC::class, 'saveCategory']);
+Route::get('modifierC/{id}', [CategoriesC::class, 'modifierCategory']);
+Route::post('modifierCategory', [CategoriesC::class, 'updateCategory']);
+Route::get('supprimerC/{id}',[CategoriesC::class,'deleteCategory']);
+
+
+
+
 
 
 
@@ -71,3 +84,8 @@ route::get('/femmen',function(){
 route::get('/hommen',function(){
     return view('frontend.hommen');
 })->name('hommen');
+route::get('/admin',function(){
+    return view('layoutsadmin.headerfotter');
+})->name('headerfotter');
+
+

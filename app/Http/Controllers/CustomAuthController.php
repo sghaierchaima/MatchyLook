@@ -58,4 +58,7 @@ class CustomAuthController extends Controller
         }
 
     }
+    public function admin(){
+        return "welcome!to your dashbord";
+    }
 }

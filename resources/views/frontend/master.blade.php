@@ -117,8 +117,10 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-heading">
-                        <h2>Homme</h2>
+                    @foreach($data as $a)
+                        <h2>{{$a->nom}}</h2>
                         <span>-----------------------</span>
+                    @endforeach
                     </div>
                 </div>
             </div>
