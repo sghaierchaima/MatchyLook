@@ -6,7 +6,7 @@
             <div class="card-header pb-0 px-3">
               <h6 class="mb-0">Modifier Categories</h6>
               @if(Session::has('succès'))
-              <div class="alert alert-succes" role="alert">
+              <div class="alert alert-success" role="alert">
                 {{Session::get('succès')}}
               </div>
               @endif

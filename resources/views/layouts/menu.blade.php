@@ -60,13 +60,13 @@ https://templatemo.com/tm-571-hexashop
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="{{route('master')}}" class="logo">
+                        <a href="{{url('masterr')}}" class="logo">
                             <img src="assets/images/OL.jpg">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="{{route('master')}}" class="active">Accueil</a></li>
+                            <li class="scroll-to-section"><a href="{{url('masterr')}}" class="active">Accueil</a></li>
                             <li class="scroll-to-section"><a href="{{route('all')}}">Homme</a></li>
                             <li class="scroll-to-section"><a href="{{route('Femme')}}">Femme</a></li>
 

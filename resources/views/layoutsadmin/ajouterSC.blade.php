@@ -14,10 +14,21 @@
               <ul class="list-group">
                 <li class="list-group-item border-0 d-flex p-4 mb-2 bg-gray-100 border-radius-lg">
                   <div class="d-flex flex-column">
-    <form action="{{url('saveCategory')}}" method="post">
+    <form action="{{url('saveSCategory')}}" method="post">
         @csrf
+        <div class="mb-3">
+        <label for="categorie_id" class="form-label">Choisir une catégorie</label>
+        <select class="form-select" name="categorie_id" id="categorie_id">
+            @foreach($categories as $categorie)
+                <option value="{{$categorie->id}}">{{$categorie->nom}}</option>
+            @endforeach
+        </select>
+        @error('categorie_id')
+            <div class="alert alert-danger" role="alert">{{$message}}</div>
+        @enderror
+    </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Nom Category</label>
+    <label for="exampleInputEmail1" class="form-label">Nom sous  categories</label>
     <input type="text" class="form-control" name="nom" >
     @error('nom')
     <div class="alert alert-danger" role="alert">
@@ -28,6 +39,6 @@
   
   
   <button type="submit" class="btn btn-primary">Ajouter</button>
-  <a href="{{url('categorie')}}" class="btn btn-danger">retour</a>
+  <a href="{{url('souscategorie')}}" class="btn btn-danger">retour</a>
 </form>
             @endsection 

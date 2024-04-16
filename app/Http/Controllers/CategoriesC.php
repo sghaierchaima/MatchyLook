@@ -8,6 +8,7 @@ use App\Models\Categories;
 class CategoriesC extends Controller
 {
     //
+   
      public function index(){
         $data=Categories::get();
         //return $data;
