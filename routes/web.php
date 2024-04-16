@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\ProductController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +23,9 @@ route::get('/login',[CustomAuthController::class,'inscrire']);
 route::post('/registerUser',[CustomAuthController::class,'registerUser'])->name('registerUser');
 route::post('connexionUser',[CustomAuthController::class,'connexionUser'])->name('connexionUser');
 
+route::post('/products', [ProductController::class, 'store']);
+
+route::get('/articles', [ArticleController::class, 'showArticles'])->name('articles.index');
 
 
 
@@ -71,3 +76,17 @@ route::get('/femmen',function(){
 route::get('/hommen',function(){
     return view('frontend.hommen');
 })->name('hommen');
+
+
+//chatbot  routes
+
+//Route::match(['get', 'post'], '/chatboot', 'App\Http\Controllers\BotController@handle');
+
+//Route::get('/chatboot', function () {
+  //  return view('frontend.chat');
+//});
+
+route::get('/avt',function(){
+    return view('frontend.avatarT');
+});
+

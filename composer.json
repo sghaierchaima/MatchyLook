@@ -1,16 +1,18 @@
 {
-    "name": "laravel/laravel",
-    "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
-    "license": "MIT",
-    "require": {
-        "php": "^8.0.2",
-        "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": "^9.19",
-        "laravel/sanctum": "^3.0",
-        "laravel/tinker": "^2.7"
-    },
+        "name": "laravel/laravel",
+        "type": "project",
+        "description": "The Laravel Framework.",
+        "keywords": ["framework", "laravel"],
+        "license": "MIT",
+        "require": {
+                "php": "^8.0.2",
+                "botman/botman": "^2.8",
+                "botman/driver-web": "^1.5",
+                "guzzlehttp/guzzle": "^7.2",
+                "laravel/framework": "^9.19",
+                "laravel/sanctum": "^3.0",
+                "laravel/tinker": "^2.7"
+        },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
@@ -56,10 +58,13 @@
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
+        "disable-tls": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
+
+ 
 }
