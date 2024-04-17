@@ -120,6 +120,10 @@
                    
                         <h2>Homme</h2>
                         <span>-----------------------</span>
+                  @foreach($data as $a)
+                        //<h2>{{$a->nom}}</h2>
+            
+                    @endforeach
                     </div>
                 </div>
             </div>
