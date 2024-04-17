@@ -109,9 +109,11 @@ route::get('/hommen',function(){
   //  return view('frontend.chat');
 //});
 
-route::get('/avt',function(){
+route::get('/avatarT',function(){
     return view('frontend.avatarT');
-});
+})->name('avatarT');
+
+
 route::get('/admin',function(){
     return view('layoutsadmin.headerfotter');
 })->name('headerfotter');
