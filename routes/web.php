@@ -134,7 +134,7 @@ route::get('/admin',function(){
 })->name('headerfotter');
 
 
-?>
+
 route::get('/avatar',function(){
     return view('frontend.avatar');
 })->name('avatar');
@@ -143,6 +143,7 @@ use App\Http\Controllers\BotManController;
 
 Route::match(['get', 'post'], '/botman', 'App\Http\Controllers\BotManController@handle');
 
-route::get('/botman',function(){
+route::get('/botman1',function(){
     return view('frontend.botman');
 });
+?>

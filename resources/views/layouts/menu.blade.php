@@ -101,8 +101,6 @@ https://templatemo.com/tm-571-hexashop
                             </li>
                             <li class="scroll-to-section"><a href="{{route('connexion')}}">Connexion</a></li>
                             <li class="scroll-to-section"><a href="{{route('about')}}">a propos</a></li>
-                            <li class="scroll-to-section"><a href="index.html">Avatar</a></li>
-                            <li class="scroll-to-section"><a href="{{route('avatar')}}">Avatar</a></li>
                             <li class="scroll-to-section"><a href="{{route('avatarT')}}">Avatar</a></li>
 
                         </ul>        
