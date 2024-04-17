@@ -50,6 +50,16 @@ route::get('/articles', [ArticleController::class, 'showArticles'])->name('artic
 Route::get('ajouterP', [ProduitsC::class, 'ajouterproduit']);
 Route::post('saveProduits', [ProduitsC::class, 'saveproduits']);
 
+route::get('/',[TemplateController::class,'index']);
+route::get('/login',[CustomAuthController::class,'inscrire']);
+route::post('/registerUser',[CustomAuthController::class,'registerUser'])->name('registerUser');
+route::post('connexionUser',[CustomAuthController::class,'connexionUser'])->name('connexionUser');
+
+
+
+
+
+
 route::get('/connexion',function(){
     return view('frontend.connexion');
 })->name('connexion');
@@ -62,12 +72,17 @@ route::get('/masthiverer',function(){
 route::get('/registre',function(){
     return view('frontend.registre');
 });
+
 /* route::get('/master',function(){
     return view('frontend.master');
 })->name('master'); */
 Route::get('/', function () {
     return view('frontend.master');
 });
+
+route::get('/master',function(){
+    return view('frontend.master');
+})->name('master');
 
 route::get('/about',function(){
     return view('frontend.about');
@@ -118,3 +133,14 @@ route::get('/admin',function(){
 
 
 ?>
+route::get('/avatar',function(){
+    return view('frontend.avatar');
+})->name('avatar');
+
+use App\Http\Controllers\BotManController;
+
+Route::match(['get', 'post'], '/botman', 'App\Http\Controllers\BotManController@handle');
+
+route::get('/botman',function(){
+    return view('frontend.botman');
+});

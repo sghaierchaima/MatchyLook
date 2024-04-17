@@ -61,12 +61,14 @@ https://templatemo.com/tm-571-hexashop
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="{{url('masterr')}}" class="logo">
+                        <a href="{{route('master')}}" class="logo">
                             <img src="assets/images/OL.jpg">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="{{url('masterr')}}" class="active">Accueil</a></li>
+                            <li class="scroll-to-section"><a href="{{route('master')}}" class="active">Accueil</a></li>
                             <li class="scroll-to-section"><a href="{{route('all')}}">Homme</a></li>
                             <li class="scroll-to-section"><a href="{{route('Femme')}}">Femme</a></li>
 
@@ -100,6 +102,7 @@ https://templatemo.com/tm-571-hexashop
                             <li class="scroll-to-section"><a href="{{route('connexion')}}">Connexion</a></li>
                             <li class="scroll-to-section"><a href="{{route('about')}}">a propos</a></li>
                             <li class="scroll-to-section"><a href="index.html">Avatar</a></li>
+                            <li class="scroll-to-section"><a href="{{route('avatar')}}">Avatar</a></li>
 
                         </ul>        
                         <a class='menu-trigger'>

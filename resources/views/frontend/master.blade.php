@@ -121,6 +121,8 @@
                         <h2>{{$a->nom}}</h2>
                         <span>-----------------------</span>
                     @endforeach
+                        <h2>Homme</h2>
+                        <span>-----------------------</span>
                     </div>
                 </div>
             </div>
