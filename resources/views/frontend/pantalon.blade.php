@@ -44,7 +44,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/homme_pantalon/4.jpg" alt="">
+                            <img src="assets/images/homme_pantalon/gris.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>New Green Jacket</h4>
@@ -69,7 +69,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/homme_pantalon/exist.jpg" alt="">
+                            <img src="assets/images/homme_pantalon/beige.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Classic Dress</h4>
@@ -94,7 +94,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/homme_pantalon/exist2.jpg" alt="">
+                            <img src="assets/images/homme_pantalon/hommePN.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Spring Collection</h4>
@@ -119,7 +119,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/homme_pantalon/exist3.jpg" alt="">
+                            <img src="assets/images/homme_pantalon/HomPantalonNoir.jpg" alt="">
                         </div>
                       
                     </div>
@@ -134,7 +134,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/homme_pantalon/exist4.jpg" alt="">
+                            <img src="assets/images/homme_pantalon/HommeKrgNoir.jpg" alt="">
                         </div>
                         
                     </div>
