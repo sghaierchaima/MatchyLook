@@ -48,7 +48,7 @@ route::post('/products', [ProductController::class, 'store']);
 route::get('/articles', [ArticleController::class, 'showArticles'])->name('articles.index');
 
 Route::get('ajouterP', [ProduitsC::class, 'ajouterproduit']);
-Route::post('saveProduits', [ProduitsC::class, 'saveproduits']);
+Route::post('saveProduits', [ProduitsC::class, 'saveProduit']);
 
 route::get('/connexion',function(){
     return view('frontend.connexion');
