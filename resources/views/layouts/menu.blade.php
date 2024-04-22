@@ -91,10 +91,10 @@ https://templatemo.com/tm-571-hexashop
                             </li> -->
                             
                             <li class="submenu">
-                                <a href="javascript:;">Collection</a>
+                                <a href="javascript:;">Accessoires</a>
                                 <ul>
-                                    <li><a href="{{route('hiver')}}">Collection Hiver</a></li>
-                                    <li><a href="#">Collection Printemps</a></li>
+                                    <li><a href="{{route('hiver')}}">Lunettes</a></li>
+                                    <li><a href="#"></a>Casquettes</li>
                                     <li><a href="#">Collection Automne</a></li>
                                     <li><a href="#">Collection d'Été </a></li>
                                 </ul>
