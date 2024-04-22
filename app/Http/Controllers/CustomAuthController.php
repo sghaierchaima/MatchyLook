@@ -48,7 +48,7 @@ class CustomAuthController extends Controller
         if($utilisateur){
             if(Hash::check($request->motDePasse,$utilisateur->mtp)){
                 $request->session()->put('loginId', $utilisateur->id);
-                return redirect('/master');
+                return redirect('/avatarT');
             }else{
                 return back()->with('fail','this password  not matches');
             }

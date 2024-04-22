@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-heading">
-                        <h2>Pull Femme </h2>
+                        <h2>Veste&Doudoune Femme </h2>
                         <span>-----------------------</span>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/femme_pull/1.jpg" alt="">
+                            <img src="assets/images/femme_pull/vC.png" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Classic Spring</h4>
@@ -75,7 +75,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/femme_pull/2.jpg" alt="">
+                            <img src="assets/images/femme_pull/doudoune2.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Air Force 1 X</h4>
@@ -100,7 +100,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/femme_pull/3.jpg"" alt="">
+                            <img src="assets/images/femme_pull/veste1.webp"" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Love Nana ‘20</h4>
@@ -125,7 +125,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/femme_pull/4.jpg" alt="">
+                            <img src="assets/images/femme_pull/doudoue3.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>New Green Jacket</h4>
@@ -150,7 +150,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/femme_pull/5.jpg" alt="">
+                            <img src="assets/images/femme_pull/femmeVesteFleurie.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Classic Dress</h4>
@@ -175,7 +175,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/femme_pull/6.jpg" alt="">
+                            <img src="assets/images/femme_pull/vesteFemmeMilitaire.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Spring Collection</h4>
@@ -266,7 +266,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-heading">
-                        <h2>Chemise  </h2>
+                        <h2>Chemise&Pull </h2>
                         <span>-----------------------</span>
                     </div>
                 </div>
@@ -287,7 +287,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/femme_pull/c1.webp" alt="">
+                            <img src="assets/images/femme_pull/capucheColF.png" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Classic Spring</h4>
@@ -312,7 +312,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/femme_pull/c4.jpg" alt="">
+                            <img src="assets/images/femme_pull/capucheBleuMarineF.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Air Force 1 X</h4>
@@ -337,7 +337,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/femme_pull/c3.webp" alt="">
+                            <img src="assets/images/femme_pull/pullMarronF.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Love Nana ‘20</h4>
@@ -362,7 +362,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/femme_pull/c9.jpg" alt="">
+                            <img src="assets/images/femme_pull/pullNoirF.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>New Green Jacket</h4>
@@ -387,7 +387,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/femme_pull/c10.jpg"alt="">
+                            <img src="assets/images/femme_pull/ch.jpg"alt="">
                         </div>
                         <div class="down-content">
                             <h4>Classic Dress</h4>
@@ -412,7 +412,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/femme_pull/c6.webp" alt="">
+                            <img src="assets/images/femme_pull/femmecapucheBleuCiel.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Spring Collection</h4>

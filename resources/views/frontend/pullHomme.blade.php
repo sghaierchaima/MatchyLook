@@ -27,7 +27,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/pull_homme/polo1.jpg" alt="">
+                            <img src="assets/images/homme_pull/CapucheColH.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Classic Spring</h4>
@@ -52,7 +52,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/pull_homme/polo2.jpg" alt="">
+                            <img src="assets/images/homme_pull/PullMarron.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Air Force 1 X</h4>
@@ -77,7 +77,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/pull_homme/polo3.jpg" alt="">
+                            <img src="assets/images/homme_pull/capucheBleuMarine.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Love Nana ‘20</h4>
@@ -102,7 +102,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/pull_homme/polo4.jpg" alt="">
+                            <img src="assets/images/homme_pull/capucheBleuCiel.webp" alt="">
                         </div>
                         <div class="down-content">
                             <h4>New Green Jacket</h4>
@@ -243,7 +243,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-heading">
-                        <h2>Pull  </h2>
+                        <h2>Veste   </h2>
                         <span>-----------------------</span>
                     </div>
                 </div>
@@ -264,7 +264,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/pull_homme/pull-jog.jpg" alt="">
+                            <img src="assets/images/homme_pull/vesteMilitaire.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Classic Spring</h4>
@@ -289,7 +289,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/pull_homme/pull-over.jpg" alt="">
+                            <img src="assets/images/homme_pull/fleurieG.webp" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Air Force 1 X</h4>
@@ -314,7 +314,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/pull_homme/pull-jog1.jpg" alt="">
+                            <img src="assets/images/homme_pull/DO.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Love Nana ‘20</h4>
@@ -339,7 +339,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/pull_homme/t-shirt.jpg" alt="">
+                            <img src="assets/images/homme_pull/DM.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>New Green Jacket</h4>
@@ -364,7 +364,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/pull_homme/pull-over2.jpg" alt="">
+                            <img src="assets/images/homme_pull/vs.png" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Classic Dress</h4>
@@ -389,7 +389,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets/images/pull_homme/pullover5.jpg" alt="">
+                            <img src="assets/images/homme_pull/nr.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Spring Collection</h4>

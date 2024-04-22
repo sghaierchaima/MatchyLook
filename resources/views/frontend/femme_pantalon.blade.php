@@ -33,7 +33,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets\images\femme_pantalon\p1.jpg" alt="">
+                            <img src="assets\images\femme_pantalon\fbeige.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Classic Spring</h4>
@@ -58,7 +58,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets\images\femme_pantalon\p2.jpg" alt="">
+                            <img src="assets\images\femme_pantalon\fNoir.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Air Force 1 X</h4>
@@ -83,7 +83,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets\images\femme_pantalon\p3.jpg" alt="">
+                            <img src="assets\images\femme_pantalon\gris.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>Love Nana ‘20</h4>
@@ -108,7 +108,7 @@
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="assets\images\femme_pantalon\p4.jpg" alt="">
+                            <img src="assets\images\femme_pantalon\fNoirKrg.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <h4>New Green Jacket</h4>
