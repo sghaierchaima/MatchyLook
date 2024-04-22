@@ -95,8 +95,8 @@ https://templatemo.com/tm-571-hexashop
                                 <ul>
                                     <li><a href="{{route('hiver')}}">Lunettes</a></li>
                                     <li><a href="#"></a>Casquettes</li>
-                                    <li><a href="#">Collection Automne</a></li>
-                                    <li><a href="#">Collection d'Été </a></li>
+                                   <!-- <li><a href="#">Collection Automne</a></li>-->
+                                   <!-- <li><a href="#">Collection d'Été </a></li>-->
                                 </ul>
                             </li>
                             <li class="scroll-to-section"><a href="{{route('connexion')}}">Connexion</a></li>
