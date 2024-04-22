@@ -43,13 +43,19 @@
         <div class="row" data-aos="fade-up" data-aos-delay="200">
             <div class="col-lg-12 d-flex justify-content-center">
                 <ul id="portfolio-flters">
-                  
                   <li data-filter="*" class="filter-active" id="all" onclick="change('all')"> <a href="{{ route('Femme', ['selected' => 'all']) }}" class="filter-link" style="color: black;">All</a></li>
                   <li data-filter="*" class="filter-active" id="pull&chemise" onclick="change('Pulls&Chemise')"> <a href="{{ route('femme_pull', ['selected' => 'femme_pull']) }}" class="filter-link" style="color: black;">PULL&Chemise</a></li>
                   <li data-filter="*" class="filter-active" id="Pantalon" onclick="change('pantalon')"> <a href="{{ route('femme_pantalon', ['selected' => 'femme_pantalon']) }}" class="filter-link" style="color: black;">Pantalon</a></li>
                   
 
 
+                    <li data-filter="*" class="filter-active" id="all">
+                        <a href="{{ route('femme_pull') }}" class="filter-link" style="color: black;">Pulls&Chemise</a>
+                    </li>
+                    <li data-filter=".filter-card" id="pantalon">
+                        <a href="{{ route('femme_pantalon') }}" class="filter-link" style="color: black;">Pantalon</a>
+                    </li>
+                    
                 </ul>
             </div>
         </div>

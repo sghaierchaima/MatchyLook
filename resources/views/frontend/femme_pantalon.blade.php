@@ -243,9 +243,16 @@
         </div>
     </section>
 
-<!-- ***** Main Banner Area End ***** -->
+
 
 
 
 
     @endsection  
+@extends('layouts.menu')
+    @section('content')
+
+
+    
+
+@endsection

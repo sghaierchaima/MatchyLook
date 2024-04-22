@@ -58,7 +58,10 @@ class CustomAuthController extends Controller
         }
 
     }
+<<<<<<< HEAD
     public function admin(){
         return "welcome!to your dashbord";
     }
+=======
+>>>>>>> 7d50db0 (commit1 chatbot)
 }

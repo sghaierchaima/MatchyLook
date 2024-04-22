@@ -61,12 +61,14 @@ https://templatemo.com/tm-571-hexashop
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="{{url('masterr')}}" class="logo">
+                        <a href="{{route('master')}}" class="logo">
                             <img src="assets/images/OL.jpg">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="{{url('masterr')}}" class="active">Accueil</a></li>
+                            <li class="scroll-to-section"><a href="{{route('master')}}" class="active">Accueil</a></li>
                             <li class="scroll-to-section"><a href="{{route('all')}}">Homme</a></li>
                             <li class="scroll-to-section"><a href="{{route('Femme')}}">Femme</a></li>
                             <li class="scroll-to-section"><a href="{{url('accesoires')}}">accesoires</a></li>
@@ -90,12 +92,12 @@ https://templatemo.com/tm-571-hexashop
                             </li> -->
                             
                             <li class="submenu">
-                                <a href="javascript:;">Collection</a>
+                                <a href="javascript:;">Accessoires</a>
                                 <ul>
-                                    <li><a href="{{route('hiver')}}">Collection Hiver</a></li>
-                                    <li><a href="#">Collection Printemps</a></li>
-                                    <li><a href="#">Collection Automne</a></li>
-                                    <li><a href="#">Collection d'Été </a></li>
+                                    <li><a href="{{route('hiver')}}">Lunettes</a></li>
+                                    <li><a href="#"></a>Casquettes</li>
+                                   <!-- <li><a href="#">Collection Automne</a></li>-->
+                                   <!-- <li><a href="#">Collection d'Été </a></li>-->
                                 </ul>
                             </li>
                             <li class="scroll-to-section"><a href="{{route('connexion')}}">Connexion</a></li>
