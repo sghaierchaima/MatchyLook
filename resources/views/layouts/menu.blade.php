@@ -69,12 +69,13 @@ https://templatemo.com/tm-571-hexashop
                             <li class="scroll-to-section"><a href="{{url('masterr')}}" class="active">Accueil</a></li>
                             <li class="scroll-to-section"><a href="{{route('all')}}">Homme</a></li>
                             <li class="scroll-to-section"><a href="{{route('Femme')}}">Femme</a></li>
+                            <li class="scroll-to-section"><a href="{{url('accesoires')}}">accesoires</a></li>
 
                             <!-- <li class="submenu">
                                 <a href="{{route('all')}}">Homme</a>
                                 <ul>
                                     <li><a href="{{route('pullHomme')}}">Pulls&Polos</a></li>
-                                    <li><a href="{{route('pantalonHomme')}}">Pantallon</a></li>
+                                    
                                 </ul>
                             </li>
                             
