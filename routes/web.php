@@ -145,5 +145,5 @@ Route::match(['get', 'post'], '/botman', 'App\Http\Controllers\BotManController@
 
 route::get('/botman1',function(){
     return view('frontend.botman');
-});
+})->name('botman1');
 ?>
