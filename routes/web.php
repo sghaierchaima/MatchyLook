@@ -50,10 +50,31 @@ route::get('/articles', [ArticleController::class, 'showArticles'])->name('artic
 Route::get('ajouterP', [ProduitsC::class, 'ajouterproduit']);
 Route::post('saveProduits', [ProduitsC::class, 'saveProduit']);
 
+<<<<<<< HEAD
+//Route::get('pantalonHomme',[ProduitsC::class,"indexe"]);
+//Route::get('/pantalonHomme', 'ProduitsC @indexe')->name('pantalonHomme');
+Route::get('pantalonHomme',[ProduitsC::class,"indexe"]);
+/* route::get('/pantalonHomme',function (){ return view('frontend.pantalon');
+})->name('pantalonHomme'); */
+Route::get('lunettes',[ProduitsC::class,"lunettes"]);
+Route::get('casquettes',[ProduitsC::class,"casquettes"]);
+Route::get('chapeau',[ProduitsC::class,"chapeau"]);
+Route::get('accesoires',[ProduitsC::class,"lunettes"]);
+
+
+
+
+
+
+
+
+
+=======
 route::get('/',[TemplateController::class,'index']);
 route::get('/login',[CustomAuthController::class,'inscrire']);
 route::post('/registerUser',[CustomAuthController::class,'registerUser'])->name('registerUser');
 route::post('connexionUser',[CustomAuthController::class,'connexionUser'])->name('connexionUser');
+>>>>>>> abcbf25a6b7a55cbd3ae7f239dc9e28ef0fbb74d
 
 
 
@@ -96,9 +117,7 @@ route::get('/femme',function(){
 route::get('/pullhomme',function(){
     return view('frontend.pullHomme');
 })->name('pullHomme');
-route::get('/pantalonHomme',function(){
-    return view('frontend.pantalon');
-})->name('pantalonHomme');
+
 
 route::get('/femme_pull',function(){
     return view('frontend.femme_pull');
@@ -114,7 +133,9 @@ route::get('/femmen',function(){
 route::get('/hommen',function(){
     return view('frontend.hommen');
 })->name('hommen');
-
+route::get('/accessoires',function(){
+    return view('frontend.lunettes');
+})->name('accessoires');
 
 //chatbot  routes
 
