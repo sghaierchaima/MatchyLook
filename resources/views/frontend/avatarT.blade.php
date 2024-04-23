@@ -13,9 +13,10 @@
         html,
         body,
         .frame {
+            
             width: 1080px;
             height: 800px;
-            margin: 0;
+            margin: 0 auto;
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
                 Droid Sans, Helvetica Neue, sans-serif;
             padding: 20px;
@@ -24,24 +25,83 @@
         }
 
         .warning {
-            background-color: #df68a2;
+            background-color: #e9eeee;
             padding: 3px;
             border-radius: 5px;
-            color: white;
+            color: rgb(43, 42, 42);
+            padding: 0;
+            margin: 10px auto;
         }
+        input[type="button"] {
+            background-color: #1e1f1f;
+            color: #c1fafee6;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 10 px;
+            margin: 20px auto;
+        }
+        li{
+            margin: 10px auto;
+
+        }
+
+        /* Style pour le survol */
+        input[type="button"]:hover {
+            color: #110643;
+            background-color: #80f2e9;
+        }
+        .scroll-text {
+            background: #80f2e9;
+            color: #333;
+            font-size: 24px;
+            position: relative; /* Position relative pour déplacer le texte */
+            overflow: hidden; /* Masquer tout dépassement de texte */
+            height: 50px; /* Hauteur du conteneur du texte */
+            line-height: 50px; /* Hauteur de ligne égale à la hauteur du conteneur */
+        }
+
+        .scroll-text span {
+            position: absolute; /* Position absolue pour déplacer le texte */
+            width: auto; /* Largeur automatique */
+            height: auto;
+            margin: 0;
+            padding: 0;
+            right: 100%; /* Déplacer le texte à droite */
+            animation: scroll 10s linear infinite; /* Animation de défilement */
+        }
+
+        @keyframes scroll {
+            from {
+                right: 100%; /* Début de l'animation : complètement à droite */
+            }
+            to {
+                right: -100%; /* Fin de l'animation : complètement à gauche */
+            }
+        }
+        
     </style>
 </head>
 
-<body> <h2>Bienvenue dans votre espace d'essayage Virtuel</h2> 
-    <ul> 
+<body>
+</br> 
+</br> 
+
+</br>
+<div class="scroll-text">
+    <span>Bienvenue dans votre espace d'essayage Virtuel</span>
+</div>
+
+    <ul align=center> 
     <li> <B>1- </B>Cliquez sur le bouton "Essayer".</li> 
     <li><B>2- </B>Créez un avatar et cliquez sur le bouton "Terminé" une fois la personnalisation terminée.</li> 
 </ul> 
-    <p class="warning">
-        Si vous rencontrez un problème, n'hésitez pas à nous <a href="{{route('about')}}"> contacter</a>    </p>
+    <p class="warning"  align=center>
+        Si vous rencontrez un problème, n'hésitez pas à nous <a href="{{route('about')}}"> Contacter</a>    </p>
 
-    <input type="button" value="essayer" onClick="displayIframe()" />
-    <p id="avatarUrl">Avatar </p>
+    <input type="button" value="Essayer" onClick="displayIframe()" />
 
     <iframe id="frame" class="frame" allow="camera *; microphone *; clipboard-write" hidden></iframe>
 
