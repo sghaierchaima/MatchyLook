@@ -50,7 +50,6 @@ route::get('/articles', [ArticleController::class, 'showArticles'])->name('artic
 Route::get('ajouterP', [ProduitsC::class, 'ajouterproduit']);
 Route::post('saveProduits', [ProduitsC::class, 'saveProduit']);
 
-<<<<<<< HEAD
 //Route::get('pantalonHomme',[ProduitsC::class,"indexe"]);
 //Route::get('/pantalonHomme', 'ProduitsC @indexe')->name('pantalonHomme');
 Route::get('pantalonHomme',[ProduitsC::class,"indexe"]);
@@ -69,13 +68,11 @@ Route::get('accesoires',[ProduitsC::class,"lunettes"]);
 
 
 
-=======
+
 route::get('/',[TemplateController::class,'index']);
 route::get('/login',[CustomAuthController::class,'inscrire']);
 route::post('/registerUser',[CustomAuthController::class,'registerUser'])->name('registerUser');
 route::post('connexionUser',[CustomAuthController::class,'connexionUser'])->name('connexionUser');
->>>>>>> abcbf25a6b7a55cbd3ae7f239dc9e28ef0fbb74d
-
 
 
 
@@ -166,6 +163,8 @@ Route::match(['get', 'post'], '/botman', 'App\Http\Controllers\BotManController@
 
 route::get('/botman1',function(){
     return view('frontend.botman');
-});
+})->name('botman1');
+
+
 
 ?>
