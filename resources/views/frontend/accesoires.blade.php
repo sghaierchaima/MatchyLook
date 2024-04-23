@@ -73,22 +73,17 @@
 <div class="row" data-aos="fade-up" data-aos-delay="200">
   <div class="col-lg-12 d-flex justify-content-center">
     <ul id="portfolio-flters">
-    @foreach($sousCategoriesHomme as $sousCategorie)
-                <li data-filter=".filter-{{ $sousCategorie->id }}" id="{{ $sousCategorie->slug }}" class="filter" onclick="change('{{ $sousCategorie->slug }}')" style="color: black;">
-                    <a href="{{ url('pantalonHomme', ['selected' => $sousCategorie->slug]) }}" class="filter-link" style="color: black;">{{ $sousCategorie->nom }}</a>
-                </li>
-            @endforeach
-      <li data-filter="*" class="filter-active" id="all" onclick="change('all')"> <a href="{{ route('all', ['selected' => 'all']) }}" class="filter-link" style="color: black;">ALL</a></li>
-      <li data-filter=".filter-app" id="pull" class="filter" onclick="change('pull')">
-        <a href="{{ route('pullHomme', ['selected' => 'pull']) }}" class="filter-link" style="color: black;">Pulls&Pollos</a>
-      </li>
-      <li data-filter=".filter-card" id="pantalon" class="filter" onclick="change('pantalon')" style="color: black;"> <a href="{{url('pantalonHomme')}}" class="filter-link" style="color: black;">Pantalon</a></li>
+    
+      
+      <li data-filter=".filter-card" id="pantalon" class="filter-active" onclick="change('pantalon')" style="color: black;"> <a href="{{url('lunettes')}}" class="filter-link" style="color: black;">lunettes</a></li>
+      <li data-filter=".filter-card" id="pantalon" class="filter" onclick="change('pantalon')" style="color: black;"> <a href="{{url('casquettes')}}" class="filter-link" style="color: black;">casquettes</a></li>
+      <li data-filter=".filter-card" id="pantalon" class="filter" onclick="change('pantalon')" style="color: black;"> <a href="{{url('chapeau')}}" class="filter-link" style="color: black;">chapeau</a></li>
     </ul>
   </div>
 </div>
 
-<div class="homme">
-    @yield('homme')
+<div class="acc">
+    @yield('acc')
 
 </div>
 
@@ -157,7 +152,7 @@
       }
     } else {
       // Si aucun élément n'est sélectionné, mettre en surbrillance "All"
-      var allElement = document.getElementById('all');
+      var allElement = document.getElementById('lunettes');
       if (allElement) {
         allElement.classList.add('filter-active');
         allElement.querySelector('.filter-link').style.color = 'black';

@@ -1,12 +1,12 @@
-@extends('frontend.hommen')
-    @section('homme')
+@extends('frontend.accesoires')
+    @section('acc')
     
     <section class="section" id="pantalon">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-heading">
-                        <h2>pantalon </h2>
+                        <h2>lunettes </h2>
                         <span>-----------------------</span>
                     </div>
                 </div>

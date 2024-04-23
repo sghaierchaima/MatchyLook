@@ -71,12 +71,13 @@ https://templatemo.com/tm-571-hexashop
                            <!-- <li class="scroll-to-section"><a href="{{route('master')}}" class="active">Accueil</a></li>-->
                             <li class="scroll-to-section"><a href="{{route('all')}}">Homme</a></li>
                             <li class="scroll-to-section"><a href="{{route('Femme')}}">Femme</a></li>
+                            <li class="scroll-to-section"><a href="{{url('accesoires')}}">accesoires</a></li>
 
                             <!-- <li class="submenu">
                                 <a href="{{route('all')}}">Homme</a>
                                 <ul>
                                     <li><a href="{{route('pullHomme')}}">Pulls&Polos</a></li>
-                                    <li><a href="{{route('pantalonHomme')}}">Pantallon</a></li>
+                                    
                                 </ul>
                             </li>
                             
@@ -90,14 +91,7 @@ https://templatemo.com/tm-571-hexashop
 
                             </li> -->
                             
-                            <li class="submenu">
-                                <a href="javascript:;">Accessoires</a>
-                                <ul>
-                                    <li><a href="{{route('hiver')}}">Lunettes</a></li>
-                                    <li><a href="#"></a>Casquettes</li>
-                                    <li><a href="#">Collection Automne</a></li>
-                                    <li><a href="#">Collection d'Été </a></li>
-                                </ul>
+                           
                             </li>
                             <li class="scroll-to-section"><a href="{{route('connexion')}}">Connexion</a></li>
                             <li class="scroll-to-section"><a href="{{route('avatarT')}}">Avatar</a></li>

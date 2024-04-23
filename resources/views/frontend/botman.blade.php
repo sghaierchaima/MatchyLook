@@ -80,7 +80,7 @@ dotlottie-player {
                             <a href="{{route('all')}}">Homme</a>
                             <ul>
                                 <li><a href="{{route('pullHomme')}}">Pulls&Polos</a></li>
-                                <li><a href="{{route('pantalonHomme')}}">Pantallon</a></li>
+                                <li><a href="{{url('pantalonHomme')}}">Pantallon</a></li>
                             </ul>
                         </li>
                         
@@ -134,5 +134,17 @@ dotlottie-player {
     </script>
    
     <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
+
+    <script>
+        // Récupérer la référence à l'élément <body>
+const body = document.querySelector('body');
+
+// Modifier le contenu HTML du <body>
+body.innerHTML = 'Nouveau contenu pour le <body>';
+
+// Ou vous pouvez ajouter du contenu supplémentaire
+body.innerHTML += '<p>Paragraphe ajouté au <body></p>';
+
+    </script>
 </body>
 </html> 
