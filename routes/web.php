@@ -85,12 +85,25 @@ Route::get('/passer-la-commande', 'CommandeController@passerCommande')->name('pa
 Route::get('/passer-la-commande', [PanierC::class, 'afficherPanier'])->name('panier');
 Route::get('/panier', [CustomAuthController::class, 'afficherPageProtegee'])->name('panier');
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+>>>>>>> 93975b8fe545893e42598df591556e408ec4fe47
 route::get('/',[TemplateController::class,'index']);
 route::get('/login',[CustomAuthController::class,'inscrire']);
 route::post('/registerUser',[CustomAuthController::class,'registerUser'])->name('registerUser');
 route::post('connexionUser',[CustomAuthController::class,'connexionUser'])->name('connexionUser');
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 93975b8fe545893e42598df591556e408ec4fe47
 
 
 
@@ -179,5 +192,8 @@ Route::match(['get', 'post'], '/botman', 'App\Http\Controllers\BotManController@
 
 route::get('/botman1',function(){
     return view('frontend.botman');
-});
+})->name('botman1');
+
+
+
 ?>
