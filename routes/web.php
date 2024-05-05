@@ -9,6 +9,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoriesC;
 use App\Http\Controllers\SousCategorieC;
 use App\Http\Controllers\ProduitsC;
+use App\Http\Controllers\PanierC;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +30,7 @@ route::post('/registerUser',[CustomAuthController::class,'registerUser'])->name(
 route::post('connexionUser',[CustomAuthController::class,'connexionUser'])->name('connexionUser');
 Route::get('/admin',[CustomAuthController::class,'admin']);
 Route::get('categorie',[CategoriesC::class,"index"]);
-Route::get('masterr', [CategoriesC::class, 'indexe']);
+Route::get('masterr', [ProduitsC::class, 'master']);
 Route::get('ajouterC', [CategoriesC::class, 'ajouterCategory']);
 Route::post('saveCategory', [CategoriesC::class, 'saveCategory']);
 Route::get('modifierC/{id}', [CategoriesC::class, 'modifierCategory']);
@@ -49,11 +50,18 @@ route::get('/articles', [ArticleController::class, 'showArticles'])->name('artic
 
 Route::get('ajouterP', [ProduitsC::class, 'ajouterproduit']);
 Route::post('saveProduits', [ProduitsC::class, 'saveProduit']);
+Route::get('modifierp/{id}', [ProduitsC::class, 'modifierproduit']);
+Route::post('modifierProduit', [ProduitsC::class, 'updateproduits']);
 
-<<<<<<< HEAD
+
 //Route::get('pantalonHomme',[ProduitsC::class,"indexe"]);
 //Route::get('/pantalonHomme', 'ProduitsC @indexe')->name('pantalonHomme');
 Route::get('pantalonHomme',[ProduitsC::class,"indexe"]);
+Route::get('pullhomme',[ProduitsC::class,"pullhomme"]);
+Route::get('vestehomme',[ProduitsC::class,"vestehomme"]);
+Route::get('pantalonfemme',[ProduitsC::class,"pantalonfemme"]);
+Route::get('pullfemme',[ProduitsC::class,"pullfemme"]);
+Route::get('vestefemme',[ProduitsC::class,"vestefemme"]);
 /* route::get('/pantalonHomme',function (){ return view('frontend.pantalon');
 })->name('pantalonHomme'); */
 Route::get('lunettes',[ProduitsC::class,"lunettes"]);
@@ -61,20 +69,27 @@ Route::get('casquettes',[ProduitsC::class,"casquettes"]);
 Route::get('chapeau',[ProduitsC::class,"chapeau"]);
 Route::get('accesoires',[ProduitsC::class,"lunettes"]);
 
+Route::get('/deconnexion', [CustomAuthController::class,"deconnexion"])->name('deconnexion');
+Route::get('/femme', [SousCategorieC::class, 'femme']);
+Route::get('/homme', [SousCategorieC::class, 'homme']);
+Route::get('/accessoires', [SousCategorieC::class, 'accessoires']);
+Route::get('/souscategoriespa/{id}', [SousCategorieC::class, 'produitBySousCategoriesa'])->name('produitBySousCategoriesa');
+Route::get('/souscategoriesp/{id}', [SousCategorieC::class, 'produitBySousCategories'])->name('produitBySousCategories');
+Route::get('/souscategoriespf/{id}', [SousCategorieC::class, 'produitBySousCategoriesf'])->name('produitBySousCategoriesf');
+Route::post('/ajouter-au-panier/{produit}', [PanierC::class, 'ajouterAuPanier'])->name('ajouter-au-panier');
+Route::post('/passer-commande', [PanierC::class, 'passerCommande'])->name('passer-commande');
 
+Route::get('/panier', [PanierC::class, 'afficherPanier'])->name('panier');
+Route::post('/retirer-du-panier/{id}', [PanierC::class, 'retirerDuPanier'])->name('retirer-du-panier');
+Route::get('/passer-la-commande', 'CommandeController@passerCommande')->name('passer-la-commande');
+Route::get('/passer-la-commande', [PanierC::class, 'afficherPanier'])->name('panier');
+Route::get('/panier', [CustomAuthController::class, 'afficherPageProtegee'])->name('panier');
 
-
-
-
-
-
-
-=======
 route::get('/',[TemplateController::class,'index']);
 route::get('/login',[CustomAuthController::class,'inscrire']);
 route::post('/registerUser',[CustomAuthController::class,'registerUser'])->name('registerUser');
 route::post('connexionUser',[CustomAuthController::class,'connexionUser'])->name('connexionUser');
->>>>>>> abcbf25a6b7a55cbd3ae7f239dc9e28ef0fbb74d
+
 
 
 
@@ -111,12 +126,10 @@ route::get('/about',function(){
 route::get('/all',function(){
     return view('frontend.all');
 })->name('all');
-route::get('/femme',function(){
+/* route::get('/femme',function(){
     return view('frontend.femme');
-})->name('Femme');
-route::get('/pullhomme',function(){
-    return view('frontend.pullHomme');
-})->name('pullHomme');
+})->name('Femme'); */
+
 
 
 route::get('/femme_pull',function(){
@@ -133,9 +146,9 @@ route::get('/femmen',function(){
 route::get('/hommen',function(){
     return view('frontend.hommen');
 })->name('hommen');
-route::get('/accessoires',function(){
+/* route::get('/accessoires',function(){
     return view('frontend.lunettes');
-})->name('accessoires');
+})->name('accessoires'); */
 
 //chatbot  routes
 

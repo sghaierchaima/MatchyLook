@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/css/lightbox.css">
     <link rel="stylesheet" href="assets/fontsr/material-design-iconic-font/css/material-design-iconic-font.min.css">
 		<!-- STYLE CSS -->
-		<link rel="stylesheet" href="assets/css/registre.css">
+		<link rel="stylesheet" href="../assets/css/registre.css">
 <style>
 dotlottie-player {
     width: 250px !important; /* nouvelle largeur */
@@ -61,48 +61,48 @@ https://templatemo.com/tm-571-hexashop
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="{{url('masterr')}}" class="logo">
-                        <a href="{{route('master')}}" class="logo">
-                            <img src="assets/images/OL.jpg">
+                       
+                            <img src="../assets/images/OL.jpg">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="{{url('masterr')}}" class="active">Accueil</a></li>
-                            <li class="scroll-to-section"><a href="{{route('master')}}" class="active">Accueil</a></li>
-                            <li class="scroll-to-section"><a href="{{route('all')}}">Homme</a></li>
-                            <li class="scroll-to-section"><a href="{{route('Femme')}}">Femme</a></li>
-                            <li class="scroll-to-section"><a href="{{url('accesoires')}}">accesoires</a></li>
+                           
+                            <li class="scroll-to-section"><a href="{{url('homme')}}">Homme</a></li>
+                            <li class="scroll-to-section"><a href="{{url('femme')}}">Femme</a></li>
+                            <li class="scroll-to-section"><a href="{{url('accessoires')}}">Accessoires</a></li>
 
-                            <!-- <li class="submenu">
-                                <a href="{{route('all')}}">Homme</a>
-                                <ul>
-                                    <li><a href="{{route('pullHomme')}}">Pulls&Polos</a></li>
-                                    
-                                </ul>
-                            </li>
+                           
                             
-<li class="submenu">
-                                <a href="{{route('Femme')}}">Femme</a>
-                                <ul>
-                                    <li><a href="{{route('femme_pull')}}">Pull </a></li>
-                                    <li><a href="{{route('femme_pantalon')}}">Pantallon</a></li>
-                                </ul>
-                            </li>                            <li class="submenu">
-
-                            </li> -->
                             
-                            <li class="submenu">
-                                <a href="javascript:;">Accessoires</a>
-                                <ul>
-                                    <li><a href="{{route('hiver')}}">Lunettes</a></li>
-                                    <li><a href="#"></a>Casquettes</li>
-                                   <!-- <li><a href="#">Collection Automne</a></li>-->
-                                   <!-- <li><a href="#">Collection d'Été </a></li>-->
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="{{route('connexion')}}">Connexion</a></li>
+                            @if(session()->has('loginId'))
+                            <li class="scroll-to-section"> <a href="{{ route('deconnexion') }}">Déconnexion</a></li>
+                            @else
+                            <li class="scroll-to-section"> <a href="{{ route('connexion') }}">Connexion</a></li>
+                            @endif
                             <li class="scroll-to-section"><a href="{{route('about')}}">a propos</a></li>
-                            <li class="scroll-to-section"><a href="{{route('avatarT')}}">Avatar</a></li>
+                            <li class="scroll-to-section">
+                            <li class="scroll-to-section">
+    <a href="{{ session()->has('loginId') ? route('avatarT') : '#' }}" onclick="{{ session()->has('loginId') ? '' : 'alert(\'Vous devez être connecté pour accéder à cette page.\'); window.location.href = \'connexion\'; return false;' }}">Avatar</a>
+</li>
+
+
+
+
+
+</li>
+                            <li class="scroll-to-section">
+        <a href="{{route('panier')}}">
+            {{-- Vérifiez si le panier est vide --}}
+            @if(empty($panier))
+                <i class="fa fa-shopping-cart"></i> 0
+            @else
+                {{-- Afficher le nombre de produits dans le panier --}}
+                <i class="fa fa-shopping-cart"></i> {{ count($panier) }}
+            @endif
+        </a>
+    </li>
 
                         </ul>        
                         <a class='menu-trigger'>
@@ -136,7 +136,7 @@ https://templatemo.com/tm-571-hexashop
             <div class="col-lg-3">
                 <div class="first-item">
                     <div class="logo">
-                    <img src="assets/images/OL.jpg">
+                    <img src="../assets/images/OL.jpg">
                     </div>
                     <ul>
                         <!-- <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, États-Unis</a></li> -->
@@ -148,23 +148,23 @@ https://templatemo.com/tm-571-hexashop
             <div class="col-lg-3">
                 <h4>Achats &amp; Catégories</h4>
                 <ul>
-                    <li><a href="#">Achats pour hommes</a></li>
-                    <li><a href="#">Achats pour femmes</a></li>
+                    <li><a href=>Achats pour hommes</a></li>
+                    <li><a href=>Achats pour femmes</a></li>
                 </ul>
             </div>
             <div class="col-lg-3">
                 <h4>Liens utiles</h4>
                 <ul>
-                    <li><a href="#">Page d'accueil</a></li>
-                    <li><a href="#">À propos de nous</a></li>
+                    <li><a href=>Page d'accueil</a></li>
+                    <li><a href=>À propos de nous</a></li>
                    
                 </ul>
             </div>
             <div class="col-lg-3">
             <h4>Contacter nous</h4>
                 <ul>
-                    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> MatchyLook@gmail.com</a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"> Matchy Look</i></a></li>
+                    <li><a href=><i class="fa fa-envelope" aria-hidden="true"></i> MatchyLook@gmail.com</a></li>
+                    <li><a href=><i class="fa fa-linkedin"> Matchy Look</i></a></li>
                    
                 </ul>
             </div>
@@ -176,7 +176,7 @@ https://templatemo.com/tm-571-hexashop
 
                    
                     <!--<ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                         <li><a href="#"><i class="fa fa-behance"></i></a></li>
@@ -191,26 +191,26 @@ https://templatemo.com/tm-571-hexashop
 </footer>
 <!-- ***** Fin du pied de page ***** -->
     <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <script src="../assets/js/jquery-2.1.0.min.js"></script>
 
     <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/popper.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
 
     <!-- Plugins -->
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/accordions.js"></script>
-    <script src="assets/js/datepicker.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/slick.js"></script> 
-    <script src="assets/js/lightbox.js"></script> 
-    <script src="assets/js/isotope.js"></script> 
+    <script src="../assets/js/owl-carousel.js"></script>
+    <script src="../assets/js/accordions.js"></script>
+    <script src="../assets/js/datepicker.js"></script>
+    <script src="../assets/js/scrollreveal.min.js"></script>
+    <script src="../assets/js/waypoints.min.js"></script>
+    <script src="../assets/js/jquery.counterup.min.js"></script>
+    <script src="../assets/js/imgfix.min.js"></script> 
+    <script src="../assets/js/slick.js"></script> 
+    <script src="../assets/js/lightbox.js"></script> 
+    <script src="../assets/js/isotope.js"></script> 
     
     <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
+    <script src="../assets/js/custom.js"></script>
 
     <script>
 

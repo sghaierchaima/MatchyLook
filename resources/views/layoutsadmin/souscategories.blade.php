@@ -22,7 +22,7 @@
                     <h6 class="mb-3 text-sm">id:{{$c->id}}</h6>
                     <span class="mb-2 text-xs">nom_sous_categories: <span class="text-dark font-weight-bold ms-sm-2">{{$c->nom}}</span></span>
                     <span class="mb-2 text-xs">nom_categories: <span class="text-dark font-weight-bold ms-sm-2">{{$c->category->nom}}</span></span><div class="ms-auto text-end">
-                    <a class="btn btn-link text-dark px-3 mb-0" href="{{ url('supprimerSC/' . $c->id) }}"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Modifier</a>
+                    <a class="btn btn-link text-dark px-3 mb-0" href="{{ url('modifierSC/' . $c->id) }}"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Modifier</a>
                     <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="{{url('supprimerSC/'.$c->id)}}"><i class="far fa-trash-alt me-2"></i>Supprimer</a>
                     
                   </div>
