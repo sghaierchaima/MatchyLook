@@ -7,6 +7,7 @@ use App\Models\Produit;
 use App\Models\SousCategories;
 use App\Models\Categories;
 use Carbon\Carbon;
+use App\Models\Paniers;
 use Illuminate\Support\Facades\Session; 
 class ProduitsC extends Controller
 {
@@ -213,55 +214,16 @@ class ProduitsC extends Controller
                     ->get();
         return view('frontend.femme_pull', compact('data', 'sousCategoriesHomme'));
     } 
-    public function vestefemme()
-    {$categorieHommeId = Categories::where('nom', 'femme')->value('id');
-
-        // Récupérer les sous-catégories qui ont comme catégorie "homme"
-        $sousCategoriesHomme = SousCategories::where('categorie_id', $categorieHommeId)->get();
+  
+  
     
-        $data = Produit::join('sous_categories', 'produits.sous_categorie_id', '=', 'sous_categories.id')
-                    ->join('categories', 'sous_categories.categorie_id', '=', 'categories.id')
-                    ->where('sous_categories.nom', 'veste')
-                    ->where('categories.nom', 'femme')
-                    ->select('produits.*') 
-                    ->get();
-        return view('frontend.femme_veste', compact('data', 'sousCategoriesHomme'));
-    } 
-
-    public function pullhomme()
-    {$categorieHommeId = Categories::where('nom', 'homme')->value('id');
-
-        // Récupérer les sous-catégories qui ont comme catégorie "homme"
-        $sousCategoriesHomme = SousCategories::where('categorie_id', $categorieHommeId)->get();
-    
-        $data = Produit::join('sous_categories', 'produits.sous_categorie_id', '=', 'sous_categories.id')
-                    ->join('categories', 'sous_categories.categorie_id', '=', 'categories.id')
-                    ->where('sous_categories.nom', 'pull')
-                    ->where('categories.nom', 'homme')
-                    ->select('produits.*') 
-                    ->get();
-        return view('frontend.pullHomme', compact('data', 'sousCategoriesHomme'));
-    } 
-    public function  vestehomme()
-    {$categorieHommeId = Categories::where('nom', 'homme')->value('id');
-
-        // Récupérer les sous-catégories qui ont comme catégorie "homme"
-        $sousCategoriesHomme = SousCategories::where('categorie_id', $categorieHommeId)->get();
-    
-        $data = Produit::join('sous_categories', 'produits.sous_categorie_id', '=', 'sous_categories.id')
-                    ->join('categories', 'sous_categories.categorie_id', '=', 'categories.id')
-                    ->where('sous_categories.nom', 'veste')
-                    ->where('categories.nom', 'homme')
-                    ->select('produits.*') 
-                    ->get();
-        return view('frontend.vestehomme', compact('data', 'sousCategoriesHomme'));
-    } 
     public function master()
     { $categorieHommeId = Categories::where('nom', 'homme')->value('id');
 
         // Récupérer les sous-catégories qui ont comme catégorie "homme"
         $sousCategoriesHomme = SousCategories::where('categorie_id', $categorieHommeId)->get();
-        $panier = session()->get('panier', []);
+        $userId = session('loginId');
+        $panier = Paniers::where('utilisateur_id', $userId)->get();
         $data = Produit::join('sous_categories', 'produits.sous_categorie_id', '=', 'sous_categories.id')
                     ->join('categories', 'sous_categories.categorie_id', '=', 'categories.id')
                     ->where('sous_categories.nom', 'pantalon')

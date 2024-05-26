@@ -17,16 +17,12 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('utilisateur_id');
             $table->foreign('utilisateur_id')->references('id')->on('utilisateurs')->onDelete('cascade');
-            $table->dateTime('date_commande');
             $table->string('adresse_livraison');
-            $table->string('statut')->default('en_attente');
-            $table->decimal('total', 8, 2);
+            $table->string('telephone');
             $table->string('mode_paiement');
             $table->string('methode_livraison');
-            $table->unsignedBigInteger('article_id');
-            $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');
-            $table->integer('quantite');
-            $table->decimal('prix_unitaire', 8, 2);
+          
+            
             $table->timestamps();
         });
     }

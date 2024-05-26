@@ -13,11 +13,11 @@
                                 <h4>Nous Sommes Matchy Look</h4>
                                 <span>Awesome, clean &amp;</span>
                                 <div class="main-border-button">
-<<<<<<< HEAD
+
                                     Découvrir !
-=======
-                                    <a href="{{route('Femme')}}">Découvrir !</a>
->>>>>>> 93975b8fe545893e42598df591556e408ec4fe47
+
+                                    <a href="{{url('femme')}}">Découvrir !</a>
+
                                 </div>
                             </div>
                             <img src="assets/images/left-banner-image.jpg" alt="">
@@ -39,11 +39,6 @@
                                                 <h4>Femme</h4>
                                                 <p></p>
                                                 <div class="main-border-button">
-<<<<<<< HEAD
-                                                   Découvrir plus
-=======
-                                                    <a href="{{route('all')}}">Découvrir plus</a>
->>>>>>> 93975b8fe545893e42598df591556e408ec4fe47
                                                 </div>
                                             </div>
                                         </div>

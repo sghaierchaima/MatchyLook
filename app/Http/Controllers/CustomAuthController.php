@@ -13,7 +13,7 @@ class CustomAuthController extends Controller
     public function inscrire(){
         return view("frontend.registre");
     }
-    public function registerUser(Request $request)
+   /*  public function registerUser(Request $request)
     {
         $request->validate([
             'prenom' => 'required',
@@ -49,36 +49,71 @@ class CustomAuthController extends Controller
         } else {
             return back()->with('fail', 'Something wrong');
         }
+    } */
+    public function registerUser(Request $request)
+{
+    $request->validate([
+        'prenom' => 'required',
+        'nom' => 'required',
+        'email' => 'required|email|unique:utilisateurs,adressemail',
+        'sexe' => 'required',
+        'motDePasse' => 'required|min:8|max:13',
+        'paswordC' => 'required|same:motDePasse',
+    ]);
+
+    $utilisateur = new Utilisateur();
+    $utilisateur->prenom = $request->prenom;
+    $utilisateur->nom = $request->nom;
+    $utilisateur->adressemail = $request->email;
+    $utilisateur->sexe = $request->sexe;
+    $utilisateur->mtp = Hash::make($request->motDePasse);
+     $utilisateur->mtpc = Hash::make($request->paswordC);
+    $utilisateur->role = $request->email === 'admin@admin.com' ? 'admin' : 'user';
+    $res = $utilisateur->save();
+
+    if ($res) {
+        return back()->with('success', 'You have registered successfully');
+    } else {
+        return back()->with('fail', 'Something went wrong');
     }
-    
-    public function connexionUser(Request $request){
-        $request->validate([
-            'email'=>'required|email',
-            'motDePasse'=>'required|min:8|max:13'
-        ]);
-    
-        $utilisateur = Utilisateur::where('adressemail','=', $request->email)->first();
-    
-        if($utilisateur){
-            if(Hash::check($request->motDePasse,$utilisateur->mtp)){
-                // Sauvegarder les données du panier actuel
-                $panier = $request->session()->get('panier', []);
-    
-                // Transférer le panier vers la nouvelle session de l'utilisateur connecté
-                $request->session()->regenerate(); // Génère une nouvelle session ID pour éviter les attaques de fixation de session
-                $request->session()->put('loginId', $utilisateur->id);
-                $request->session()->put('nom', $utilisateur->nom);
-                $request->session()->put('adressemail', $utilisateur->adressemail);
-                $request->session()->put('panier', $panier);
-                
+}
+public function connexionUser(Request $request)
+{
+    $request->validate([
+        'email' => 'required|email',
+        'motDePasse' => 'required|min:8|max:13'
+    ]);
+
+    $utilisateur = Utilisateur::where('adressemail', '=', $request->email)->first();
+
+    if ($utilisateur) {
+        if (Hash::check($request->motDePasse, $utilisateur->mtp)) {
+            // Sauvegarder les données du panier actuel
+            $panier = $request->session()->get('panier', []);
+
+            // Transférer le panier vers la nouvelle session de l'utilisateur connecté
+            $request->session()->regenerate(); // Génère une nouvelle session ID pour éviter les attaques de fixation de session
+            $request->session()->put('loginId', $utilisateur->id);
+            $request->session()->put('nom', $utilisateur->nom);
+            $request->session()->put('prenom', $utilisateur->prenom);
+            $request->session()->put('adressemail', $utilisateur->adressemail);
+            $request->session()->put('role', $utilisateur->role);
+            $request->session()->put('panier', $panier);
+            
+            // Redirection basée sur le rôle de l'utilisateur
+            if ($utilisateur->role === 'admin') {
+                return redirect('/admin');
+            } else {
                 return redirect('/masterr');
-            }else{
-                return back()->with('fail','Le mot de passe ne correspond pas.');
             }
-        }else{
-            return back()->with('fail','Cette adresse e-mail n\'est pas enregistrée.');
+        } else {
+            return back()->with('fail', 'Le mot de passe ne correspond pas.');
         }
+    } else {
+        return back()->with('fail', 'Cette adresse e-mail n\'est pas enregistrée.');
     }
+}
+
     
   /*   public function connexionUser(Request $request)
 {
@@ -111,7 +146,7 @@ class CustomAuthController extends Controller
 
 
     public function admin(){
-        return "welcome!to your dashbord";
+        return view('layoutsadmin.headerfotter');
     }
     public function verifierConnexion() {
         if (session()->has('loginId')) {
@@ -133,11 +168,10 @@ class CustomAuthController extends Controller
     }
     public function deconnexion(Request $request)
     {
-        // Effacez toutes les données de session existantes
-        session()->flush();
+        // Effacer toutes les données de session existantes
+        $request->session()->flush();
         
-    
-        // Redirigez l'utilisateur vers la page de connexion ou une autre page
+        // Rediriger l'utilisateur vers la page de connexion
         return redirect()->route('connexion');
     }
 }

@@ -8,6 +8,7 @@ use App\Models\Categories;
 
 use App\Models\Produit;
 
+use App\Models\Paniers;
 class SousCategorieC extends Controller
 {
     //
@@ -52,11 +53,7 @@ class SousCategorieC extends Controller
 
     return redirect()->back()->with('succès','Sous-catégorie ajoutée avec succès');
 }
-/* public function modifierSousCategorie($id)
-{
-    $data = SousCategories::findOrFail($id);
-    return view('layoutsadmin.modifierSc', compact('data'));
-} */
+
 public function modifierSousCategorie($id)
 {
     $sousCategorie = SousCategories::findOrFail($id);
@@ -86,13 +83,7 @@ public function deleteSousCategory($id) {
     SousCategories::where('id', $id)->delete();
     return redirect()->back()->with('succès', 'Sous-catégorie supprimée avec succès');
 }
-/* public function showSousCategories() {
-    $sousCategories = SousCategorie::whereHas('categorie', function($query) {
-        $query->where('nom', 'homme');
-    })->get();
 
-    return view('frontend.hommen', ['sousCategories' => $sousCategories]);
-} */
 
 public function show($id)
 {
@@ -120,6 +111,7 @@ public function show($id)
 
 public function indexe()
 {
+    
     // Récupérer la liste des sous-catégories de la catégorie "homme" depuis la base de données
     $sousCategories = SousCategories::whereHas('category', function ($query) {
         $query->where('nom', 'homme');
@@ -143,6 +135,7 @@ public function indexe()
 
  public function homme()
  {
+    
      // Récupérer les sous-catégories qui ont comme catégorie "homme"
      $sousCategoriesHomme = SousCategories::whereHas('category', function ($query) {
          $query->where('nom', 'homme');
@@ -161,7 +154,8 @@ public function indexe()
  
      // Récupérer l'ID de la sous-catégorie active (vous devez définir cette variable)
      $activeSubcategoryId = request()->route('id'); // Exemple: Remplacez 1 par l'ID réel de la sous-catégorie active
- 
+     $userId = session('loginId');
+     $panier = Paniers::where('utilisateur_id', $userId)->get();
      // Retourner les données vers la vue avec l'ID de la sous-catégorie active
      return view('frontend.accueil', ['sousCategories' => $sousCategoriesHomme, 'produits' => $produits,'activeSubcategoryId' => $activeSubcategoryId
      ,'panier'=>$panier]);
@@ -172,7 +166,8 @@ public function indexe()
      $sousCategoriesFemme = SousCategories::whereHas('category', function ($query) {
          $query->where('nom', 'femme');
      })->get();
-     $panier = session()->get('panier', []);
+     $userId = session('loginId');
+     $panier = Paniers::where('utilisateur_id', $userId)->get();
      // Initialiser un tableau pour stocker les produits
      $produits = [];
  
@@ -246,7 +241,8 @@ public function indexe()
      $sousCategoriesaccesoires = SousCategories::whereHas('category', function ($query) {
          $query->where('nom', 'accessoires');
      })->get();
-     $panier = session()->get('panier', []);
+     $userId = session('loginId');
+     $panier = Paniers::where('utilisateur_id', $userId)->get();
      // Initialiser un tableau pour stocker les produits
      $produits = [];
  

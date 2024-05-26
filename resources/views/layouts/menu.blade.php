@@ -68,27 +68,22 @@ https://templatemo.com/tm-571-hexashop
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="{{url('masterr')}}" class="active">Accueil</a></li>
-<<<<<<< HEAD
+
                            
                             <li class="scroll-to-section"><a href="{{url('homme')}}">Homme</a></li>
                             <li class="scroll-to-section"><a href="{{url('femme')}}">Femme</a></li>
                             <li class="scroll-to-section"><a href="{{url('accessoires')}}">Accessoires</a></li>
-=======
-                           <!-- <li class="scroll-to-section"><a href="{{route('master')}}" class="active">Accueil</a></li>-->
-                            <li class="scroll-to-section"><a href="{{route('all')}}">Homme</a></li>
-                            <li class="scroll-to-section"><a href="{{route('Femme')}}">Femme</a></li>
-                            <li class="scroll-to-section"><a href="{{url('accesoires')}}">accesoires</a></li>
->>>>>>> 93975b8fe545893e42598df591556e408ec4fe47
+
+    
 
                            
                             
                             
-<<<<<<< HEAD
                             @if(session()->has('loginId'))
-                            <li class="scroll-to-section"> <a href="{{ route('deconnexion') }}">Déconnexion</a></li>
-                            @else
-                            <li class="scroll-to-section"> <a href="{{ route('connexion') }}">Connexion</a></li>
-                            @endif
+    <li class="scroll-to-section"> <a href="{{ route('deconnexion') }}">Déconnexion</a></li>
+@else
+    <li class="scroll-to-section"> <a href="{{ route('connexion') }}">Connexion</a></li>
+@endif
                             <li class="scroll-to-section"><a href="{{route('about')}}">a propos</a></li>
                             <li class="scroll-to-section">
                             <li class="scroll-to-section">
@@ -101,25 +96,24 @@ https://templatemo.com/tm-571-hexashop
 
 </li>
                             <li class="scroll-to-section">
-        <a href="{{route('panier')}}">
+        <a href="{{url('panier')}}">
             {{-- Vérifiez si le panier est vide --}}
             @if(empty($panier))
-                <i class="fa fa-shopping-cart"></i> 0
+                <i class="fa fa-shopping-cart"></i> (0)
             @else
                 {{-- Afficher le nombre de produits dans le panier --}}
-                <i class="fa fa-shopping-cart"></i> {{ count($panier) }}
+                <i class="fa fa-shopping-cart"></i> ({{ count($panier) }})
             @endif
         </a>
     </li>
-=======
+
                            
                             </li>
-                            <li class="scroll-to-section"><a href="{{route('connexion')}}">Connexion</a></li>
-                            <li class="scroll-to-section"><a href="{{route('avatarT')}}">Avatar</a></li>
+                           
                             <li class="scroll-to-section"><a href="{{route('botman1')}}">MatchyBot</a></li>
 
-                            <li class="scroll-to-section"><a href="{{route('about')}}">a propos</a></li>
->>>>>>> 93975b8fe545893e42598df591556e408ec4fe47
+                          
+
 
                         </ul>        
                         <a class='menu-trigger'>

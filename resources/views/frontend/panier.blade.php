@@ -1,10 +1,11 @@
 @extends('layouts.menu')
 
 @section('content')
-    <hr><hr><hr><hr><hr><hr>
+<br><br><br><br><br><br><br><br><br><br>
     <div class="container">
         <h1>Votre Panier</h1>
         <p>Bonjour, {{ session('nom') }}</p>
+        
         {{-- Vérifier si un utilisateur est connecté --}}
         @if(session()->has('nom'))
             {{-- Vérifier si le panier est vide --}}
@@ -27,7 +28,13 @@
                         @foreach ($panier as $item)
                             <tr>
                                 <td>{{ $item['produit']->nom }}</td>
-                                <td>{{ $item['quantite'] }}</td>
+                                <td>
+                                    <form action="{{ route('modifier-quantite', $item['produit']->id) }}" method="POST" id="form-{{ $item['produit']->id }}">
+                                        @csrf
+                                        <input type="number" name="quantite" value="{{ $item['quantite'] }}" min="1" data-product-id="{{ $item['produit']->id }}" class="quantity-input">
+                                        <button type="submit" class="btn btn-primary">Mettre à jour</button>
+                                    </form>
+                                </td>
                                 <td>{{ $item['produit']->prix }} DT</td>
                                 <td>{{ $item['quantite'] * $item['produit']->prix }} DT</td>
                                 <td>
@@ -41,15 +48,30 @@
                         <tr>
                             <td colspan="3" class="text-right"><strong>Total :</strong></td>
                             <td>{{ $total }} DT</td>
-                            <td><a href="" class="btn btn-success">Passer la commande</a></td>
-                            <form action="{{ route('passer-commande') }}" method="POST">
-                            @csrf
-                            <button type="submit" class="btn btn-success">Passer la commande</button>
-                            </form>
+                            <td>
+                                <form action="{{ route('passer-commande') }}" method="POST">
+                                    @csrf
+                                    <button type="submit" class="btn btn-success">Passer la commande</button>
+                                </form>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             @endif
         @endif
     </div>
+    {{ $panier->links() }}
 @endsection
+
+@push('scripts')
+<script>
+    // Ajouter un écouteur d'événements à tous les champs de quantité
+    document.querySelectorAll('.quantity-input').forEach(input => {
+        input.addEventListener('change', function() {
+            const productId = this.dataset.productId;
+            const form = document.querySelector(`#form-${productId}`);
+            form.submit(); // Soumettre automatiquement le formulaire de mise à jour
+        });
+    });
+</script>
+@endpush
