@@ -218,7 +218,42 @@ class ProduitsC extends Controller
   
     
     public function master()
-    { $categorieHommeId = Categories::where('nom', 'homme')->value('id');
+    {
+       
+        // Récupérer les sous-catégories qui ont comme catégorie "homme"
+        $sousCategoriesHomme = SousCategories::whereHas('category', function ($query) {
+            $query->where('nom', 'homme');
+        })->get();
+        $sousCategoriesFemme = SousCategories::whereHas('category', function ($query) {
+            $query->where('nom', 'femme');
+        })->get();
+        $panier = session()->get('panier', []);
+        // Initialiser un tableau pour stocker les produits
+        $produits = [];
+        $femme = [];
+    
+        // Récupérer aléatoirement un produit de chaque sous-catégorie
+        foreach ($sousCategoriesHomme as $sousCategorie) {
+            $produitAleatoire = $sousCategorie->produits()->inRandomOrder()->first();
+            if ($produitAleatoire) {
+                $produits[] = $produitAleatoire;
+            }
+        }
+        foreach ($sousCategoriesFemme as $sous) {
+            $produitAleatoire = $sous->produits()->inRandomOrder()->first();
+            if ($produitAleatoire) {
+                $femme[] = $produitAleatoire;
+            }
+        }
+        // Récupérer l'ID de la sous-catégorie active (vous devez définir cette variable)
+        $activeSubcategoryId = request()->route('id'); // Exemple: Remplacez 1 par l'ID réel de la sous-catégorie active
+        $userId = session('loginId');
+        $panier = Paniers::where('utilisateur_id', $userId)->get();
+        // Retourner les données vers la vue avec l'ID de la sous-catégorie active
+        return view('frontend.master', ['sousCategories' => $sousCategoriesHomme, 'sous' => $sousCategoriesFemme,'produits' => $produits,'femme' => $femme,'activeSubcategoryId' => $activeSubcategoryId
+        ,'panier'=>$panier]);
+    }
+    /* { $categorieHommeId = Categories::where('nom', 'homme')->value('id');
 
         // Récupérer les sous-catégories qui ont comme catégorie "homme"
         $sousCategoriesHomme = SousCategories::where('categorie_id', $categorieHommeId)->get();
@@ -233,7 +268,7 @@ class ProduitsC extends Controller
                     ->get();
        
         return view('frontend.master', compact('data','panier'));
-    }
+    } */
    
     public function afficherProduits($id) {
         $sousCategorie = SousCategorie::findOrFail($id);

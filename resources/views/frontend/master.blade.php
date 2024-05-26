@@ -116,187 +116,75 @@
 
     <!-- ***** Men Area Starts ***** -->
     <section class="section" id="men">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-heading">
-                   
-                        <h2>Homme</h2>
-                        <span@if(session()->has('nom'))
-    <p>Bonjour, {{ session('nom') }}</p>
-@endifspan>
-                        <div class="container">
-            <div class="row">
-               
-                
-               
-                @foreach($data as $v)
-                <div class="col-lg-4">
-                    <div class="item">
-                        <div class="thumb">
-                            <div class="hover-content">
-                                <ul>
-                                    <li><i class="fa fa-eye"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-shopping-cart"></i></li>
-                                </ul>
-                            </div>
-                            <img src="{{asset('assets/images')}}/{{$v->image}} "alt="{{$v->image}}">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Homme</h2>
+        </div>
+        <div class="row">
+            @foreach($produits as $v)
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="item">
+                    <div class="thumb">
+                        <div class="hover-content">
                             
                         </div>
-                        <div class="down-content">
-                            <h4>{{$v->nom}}</h4>
-                            <span class="text-secondary text-xs font-weight-bold">{{$v->couleur}}</span>
-                     
-                            <span>Prix: {{ number_format($v->prix, 2, ',', ' ') }} DT</span>
-                            <p class="text-xs text-secondary mb-0">{{$v->description}}</p>
-                            
-                            <ul class="stars">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                        </div>
+                        <img src="{{asset('assets/images')}}/{{$v->image}}" alt="{{$v->image}}" class="img-fluid">
                     </div>
-                </div>
-                @endforeach
-               
-                
-            </div>
-        </div>
+                    <div class="down-content">
+                        <h4>{{$v->nom}}</h4>
+                        <span class="text-secondary text-xs font-weight-bold">{{$v->couleur}}</span>
+                        <span>Prix: {{ number_format($v->prix, 2, ',', ' ') }} DT</span>
+                        <p class="text-xs text-secondary mb-0">{{$v->description}}</p>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
-        
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
     <!-- ***** Men Area Ends ***** -->
-
-    <!-- ***** Women Area Starts ***** -->
-    <!-- <section class="section" id="women">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-heading">
-                        <h2>Femme </h2>
-                        <span>--------------------</span>
-                    
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="women-item-carousel">
-                        <div class="owl-women-item owl-carousel">
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><i class="fa fa-eye"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-shopping-cart"></i></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/femme_pull/1.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Nouvelle Pull Vert</h4>
-                                    <span>75.00-dt</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><i class="fa fa-eye"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-shopping-cart"></i></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/femme_pull/3.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Chemise noire </h4>
-                                    <span>45.00-dt</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><i class="fa fa-eye"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-shopping-cart"></i></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/femme_pull/22.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Collection d'hiver</h4>
-                                    <span>130.00-dt</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><i class="fa fa-eye"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-shopping-cart"></i></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/femme_pull/33.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Classic </h4>
-                                    <span>120.00-dt</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
+ 
+<section class="section" id="women">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Femme</h2>
+        </div>
+        <div class="row">
+            @foreach($femme as $v)
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="item">
+                    <div class="thumb">
+                        <div class="hover-content">
+                            
                         </div>
+                        <img src="{{asset('assets/images')}}/{{$v->image}}" alt="{{$v->image}}" class="img-fluid">
+                    </div>
+                    <div class="down-content">
+                        <h4>{{$v->nom}}</h4>
+                        <span class="text-secondary text-xs font-weight-bold">{{$v->couleur}}</span>
+                        <span>Prix: {{ number_format($v->prix, 2, ',', ' ') }} DT</span>
+                        <p class="text-xs text-secondary mb-0">{{$v->description}}</p>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
-    </section> -->
-    <!-- ***** Women Area Ends ***** -->
-
-    <!-- ***** Kids Area Starts ***** -->
-   
+    </div>
+</section>
 
     <!-- ***** Explore Area Starts ***** -->
     <section class="section" id="explore">
