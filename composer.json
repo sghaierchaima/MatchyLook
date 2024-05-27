@@ -1,5 +1,5 @@
 {
-<<<<<<< HEAD
+
         "name": "laravel/laravel",
         "type": "project",
         "description": "The Laravel Framework.",
@@ -14,7 +14,7 @@
                 "laravel/sanctum": "^3.0",
                 "laravel/tinker": "^2.7"
         },
-=======
+
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
@@ -29,7 +29,7 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7"
     },
->>>>>>> 7d50db0 (commit1 chatbot)
+
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
@@ -75,21 +75,14 @@
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
-<<<<<<< HEAD
         "disable-tls": true,
-=======
->>>>>>> 7d50db0 (commit1 chatbot)
+        
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
     },
-<<<<<<< HEAD
     "minimum-stability": "dev",
     "prefer-stable": true
 
  
-=======
-    "minimum-stability": "stable",
-    "prefer-stable": true
->>>>>>> 7d50db0 (commit1 chatbot)
 }
