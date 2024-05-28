@@ -12,8 +12,13 @@ class Produit extends Model
 {
     return $this->belongsTo(SousCategories::class, 'sous_categorie_id');
 }
+
 public function category()
 {
     return $this->belongsTo(Categories::class, 'categorie_id'); // Utiliser la clé étrangère 'categorie_id' pour la relation avec la catégorie
 } 
+public function paniers()
+{
+    return $this->hasMany(Panier::class);
+}
 }

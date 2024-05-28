@@ -37,53 +37,21 @@
           <div class="section-title" data-aos="fade-up">
             <h2>Gategories</h2>
           </div>
-   <!--  <div class="row" data-aos="fade-up" data-aos-delay="200">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active"  id="all" onclick="change('all')">All</li>
-            <li data-filter=".filter-app"   id="pull" class="filter"onclick="change('pull')"><a href="{{route('pullHomme')}}" style="color:black;">Pulls&Pollos</a></li>
-            <li data-filter=".filter-card"  id="pantalon"class="filter" onclick="change('pantalon')"style="color:black;">Pantalon</li>
-            
-          </ul>
-        </div>
-      </div> -->
-    <!--   <div class="row" data-aos="fade-up" data-aos-delay="200">
-  <div class="col-lg-12 d-flex justify-content-center">
-    <ul id="portfolio-flters">
-      <li data-filter="*" class="filter-active" id="all" onclick="change('all')">All</li>
-      <li data-filter=".filter-app" id="pull" class="filter" onclick="change('pull')">
-        <a href="{{route('pullHomme')}}" class="filter-link" style="color:black;">Pulls&Pollos</a>
-      </li>
-      <li data-filter=".filter-card" id="pantalon" class="filter" onclick="change('pantalon')" style="color:black;">Pantalon</li>
-    </ul>
-  </div>
-</div> -->
-<!-- <div class="row" data-aos="fade-up" data-aos-delay="200">
-  <div class="col-lg-12 d-flex justify-content-center">
-    <ul id="portfolio-flters">
-      <li data-filter="*" class="filter-active" id="all" onclick="change('all')">All</li>
-      <li data-filter=".filter-app" id="pull" class="filter" onclick="change('pull')">
-        <a href="{{ route('pullHomme', ['selected' => 'pull']) }}"class="filter-link" style="color:black;">Pulls&Pollos</a>
-      </li>
-      <li data-filter=".filter-card" id="pantalon" class="filter" onclick="change('pantalon')" style="color:black;">Pantalon</li>
-       <a href="{{ route('pullHomme', ['selected' => 'pull']) }}" class="filter-link" style="color: black;">Pulls&Pollos</a> 
-    </ul>
-  </div>
-</div> -->
+   
 <div class="row" data-aos="fade-up" data-aos-delay="200">
   <div class="col-lg-12 d-flex justify-content-center">
     <ul id="portfolio-flters">
-    @foreach($sousCategoriesHomme as $sousCategorie)
-                <li data-filter=".filter-{{ $sousCategorie->id }}" id="{{ $sousCategorie->slug }}" class="filter" onclick="change('{{ $sousCategorie->slug }}')" style="color: black;">
-                    <a href="{{ url('pantalonHomme', ['selected' => $sousCategorie->slug]) }}" class="filter-link" style="color: black;">{{ $sousCategorie->nom }}</a>
-                </li>
-            @endforeach
-      <li data-filter="*" class="filter-active" id="all" onclick="change('all')"> <a href="{{ route('all', ['selected' => 'all']) }}" class="filter-link" style="color: black;">ALL</a></li>
-      <li data-filter=".filter-app" id="pull" class="filter" onclick="change('pull')">
-        <a href="{{ route('pullHomme', ['selected' => 'pull']) }}" class="filter-link" style="color: black;">Pulls&Pollos</a>
-      </li>
-      <li data-filter=".filter-card" id="pantalon" class="filter" onclick="change('pantalon')" style="color: black;"> <a href="{{url('pantalonHomme')}}" class="filter-link" style="color: black;">Pantalon</a></li>
-    </ul>
+     
+   
+    <ul>
+    <ul>
+     @foreach($sousCategories as $sousCategorie)
+    <li><a href="{{ route('souscategories.show', ['id' => $sousCategorie->id]) }}">{{ $sousCategorie->nom }}</a></li>
+@endforeach 
+
+
+</ul>
+</ul>
   </div>
 </div>
 

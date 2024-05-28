@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
+=======
+
+>>>>>>> ef453538f183af11dc860ff7b4dda100842d166c
         "name": "laravel/laravel",
         "type": "project",
         "description": "The Laravel Framework.",
@@ -74,14 +78,28 @@
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
+<<<<<<< HEAD
+=======
+
+>>>>>>> ef453538f183af11dc860ff7b4dda100842d166c
         "disable-tls": true,
 
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
     },
+<<<<<<< HEAD
     "minimum-stability": "dev",
     "prefer-stable": true
 
  
+=======
+   "minimum-stability": "dev",
+    "prefer-stable": true
+
+ 
+    
+
+   
+>>>>>>> ef453538f183af11dc860ff7b4dda100842d166c
 }

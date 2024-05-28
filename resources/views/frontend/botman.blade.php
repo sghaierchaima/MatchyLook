@@ -74,35 +74,11 @@ dotlottie-player {
                         <li class="scroll-to-section"><a href="{{url('masterr')}}" class="active">Accueil</a></li>
                        <!-- <li class="scroll-to-section"><a href="{{route('master')}}" class="active">Accueil</a></li>-->
                         <li class="scroll-to-section"><a href="{{route('all')}}">Homme</a></li>
-                        <li class="scroll-to-section"><a href="{{route('Femme')}}">Femme</a></li>
+                        <li class="scroll-to-section"><a href="{{url('femme')}}">Femme</a></li>
 
-                        <!-- <li class="submenu">
-                            <a href="{{route('all')}}">Homme</a>
-                            <ul>
-                                <li><a href="{{route('pullHomme')}}">Pulls&Polos</a></li>
-                                <li><a href="{{url('pantalonHomme')}}">Pantallon</a></li>
-                            </ul>
-                        </li>
+                       
                         
-<li class="submenu">
-                            <a href="{{route('Femme')}}">Femme</a>
-                            <ul>
-                                <li><a href="{{route('femme_pull')}}">Pull </a></li>
-                                <li><a href="{{route('femme_pantalon')}}">Pantallon</a></li>
-                            </ul>
-                        </li>                            <li class="submenu">
-
-                        </li> -->
-                        
-                        <li class="submenu">
-                            <a href="javascript:;">Accessoires</a>
-                            <ul>
-                                <li><a href="{{route('hiver')}}">Lunettes</a></li>
-                                <li><a href="#"></a>Casquettes</li>
-                                <li><a href="#">Collection Automne</a></li>
-                                <li><a href="#">Collection d'Été </a></li>
-                            </ul>
-                        </li>
+                        <
                         <li class="scroll-to-section"><a href="{{route('connexion')}}">Connexion</a></li>
                         <li class="scroll-to-section"><a href="{{route('avatarT')}}">Avatar</a></li>
                         <li class="scroll-to-section"><a href="{{route('botman1')}}">MatchyBot</a></li>

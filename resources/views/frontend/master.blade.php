@@ -13,7 +13,11 @@
                                 <h4>Nous Sommes Matchy Look</h4>
                                 <span>Awesome, clean &amp;</span>
                                 <div class="main-border-button">
-                                    <a href="{{route('Femme')}}">Découvrir !</a>
+
+                                    Découvrir !
+
+                                    <a href="{{url('femme')}}">Découvrir !</a>
+
                                 </div>
                             </div>
                             <img src="assets/images/left-banner-image.jpg" alt="">
@@ -35,7 +39,6 @@
                                                 <h4>Femme</h4>
                                                 <p></p>
                                                 <div class="main-border-button">
-                                                    <a href="{{route('all')}}">Découvrir plus</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -54,7 +57,7 @@
                                             <div class="inner">
                                                 <h4>Men</h4>
                                                 <div class="main-border-button">
-                                                    <a href="#">Découvrir plus</a>
+                                                   Découvrir plus
                                                 </div>
                                             </div>
                                         </div>
@@ -75,7 +78,7 @@
                                                 <h4>Promotion</h4>
                                                 <p>Promotion d'Hiver 2024</p>
                                                 <div class="main-border-button">
-                                                    <a href="#">Découvrir plus</a>
+                                                    Découvrir plus
                                                 </div>
                                             </div>
                                         </div>
@@ -95,7 +98,7 @@
                                                 <h4>Hiver 2024</h4>
                                                 <p>Hiver 2024</p>
                                                 <div class="main-border-button">
-                                                    <a href="#">Découvrir plus</a>
+                                                    Découvrir plus
                                                 </div>
                                             </div>
                                         </div>
@@ -113,242 +116,75 @@
 
     <!-- ***** Men Area Starts ***** -->
     <section class="section" id="men">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-heading">
-                   
-                        <h2>Homme</h2>
-                        <span>-----------------------</span>
-                  
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+        <div class="section-heading">
+            <h2>Homme</h2>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="men-item-carousel">
-                        <div class="owl-men-item owl-carousel">
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/pull_homme/pullover5.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Classic Spring</h4>
-                                    <span>120.00-dt</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/pull_homme/polo4.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Air Force 1 X</h4>
-                                    <span>90.00-dt</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/pull_homme/t-shirt.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Capuche Vert </h4>
-                                    <span>150.00-dt</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/pull_homme/t-shirt.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Classic </h4>
-                                    <span>120.00-dt</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
+        <div class="row">
+            @foreach($produits as $v)
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="item">
+                    <div class="thumb">
+                        <div class="hover-content">
+                            
                         </div>
+                        <img src="{{asset('assets/images')}}/{{$v->image}}" alt="{{$v->image}}" class="img-fluid">
+                    </div>
+                    <div class="down-content">
+                        <h4>{{$v->nom}}</h4>
+                        <span class="text-secondary text-xs font-weight-bold">{{$v->couleur}}</span>
+                        <span>Prix: {{ number_format($v->prix, 2, ',', ' ') }} DT</span>
+                        <p class="text-xs text-secondary mb-0">{{$v->description}}</p>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
-    </section>
+    </div>
+</section>
     <!-- ***** Men Area Ends ***** -->
-
-    <!-- ***** Women Area Starts ***** -->
-    <section class="section" id="women">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-heading">
-                        <h2>Femme </h2>
-                        <span>--------------------</span>
-                    </div>
-                </div>
-            </div>
+ 
+<section class="section" id="women">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Femme</h2>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="women-item-carousel">
-                        <div class="owl-women-item owl-carousel">
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/femme_pull/1.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Nouvelle Pull Vert</h4>
-                                    <span>75.00-dt</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/femme_pull/3.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Chemise noire </h4>
-                                    <span>45.00-dt</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/femme_pull/22.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Collection d'hiver</h4>
-                                    <span>130.00-dt</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/femme_pull/33.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Classic </h4>
-                                    <span>120.00-dt</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
+        <div class="row">
+            @foreach($femme as $v)
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="item">
+                    <div class="thumb">
+                        <div class="hover-content">
+                            
                         </div>
+                        <img src="{{asset('assets/images')}}/{{$v->image}}" alt="{{$v->image}}" class="img-fluid">
+                    </div>
+                    <div class="down-content">
+                        <h4>{{$v->nom}}</h4>
+                        <span class="text-secondary text-xs font-weight-bold">{{$v->couleur}}</span>
+                        <span>Prix: {{ number_format($v->prix, 2, ',', ' ') }} DT</span>
+                        <p class="text-xs text-secondary mb-0">{{$v->description}}</p>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
-    </section>
-    <!-- ***** Women Area Ends ***** -->
-
-    <!-- ***** Kids Area Starts ***** -->
-   
+    </div>
+</section>
 
     <!-- ***** Explore Area Starts ***** -->
     <section class="section" id="explore">
@@ -363,7 +199,7 @@
                         </div>
                         <p>Chez nous, vous pouvez créer votre propre avatar et l'essayer avant de passer à l'achat. Notre objectif est votre satisfaction totale. Avec notre outil de création d'avatar convivial, vous avez la liberté de personnaliser chaque détail pour qu'il reflète parfaitement votre style et votre personnalité.</p>
                         <div class="main-border-button">
-                            <a href="products.html">Commencer ! </a>
+                            Commencer ! 
                         </div>
                     </div>
                 </div>
