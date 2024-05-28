@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @extends('layouts.menu')
     @section('content')
@@ -20,6 +21,47 @@
             </video>
         </div>
 
+=======
+@extends('layouts.menu')
+    @section('content')
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <div class="container-fluid">
+    <!-- ***** Main Banner Area End ***** -->
+
+
+   <style>
+    body {
+  background-image: url('assets\images\wal.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+    .vdc {
+            
+        position: fixed;
+        right:150px;
+        left: 150px;
+        bottom: 0;
+        width: 55%;
+        height: 100%;
+        z-index: -1000;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 5500px; 
+    }
+</style>
+       
+    <div class="wrapper" style="background-image: url('assets/images/bg-registration-form-1.jpg');">
+            <div class="inner">
+                
+                    <video autoplay loop class="">
+                        <source src="assets\images\video\ch.mp4" type="video/mp4"></div>
+                    </video>
+                </div>
+                
+            
+>>>>>>> 4c245a5734c413397f6ccc6def528e156cc00b3f
        
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.min.css">
         
@@ -34,7 +76,11 @@
        
        <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
        
+<<<<<<< HEAD
 		</div>     
+=======
+        </div>     
+>>>>>>> 4c245a5734c413397f6ccc6def528e156cc00b3f
 @endsection                  
 
 <header class="header-area header-sticky">
@@ -102,4 +148,5 @@ body.innerHTML += '<p>Paragraphe ajouté au <body></p>';
 
     </script>
 </body>
-</html> 
+</html>
+ 

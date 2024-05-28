@@ -5,7 +5,7 @@ use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\CustomAuthController;
 
 use App\Http\Controllers\ProductController;
-
+use App\Http\Controllers\AvisController;
 use App\Http\Controllers\CategoriesC;
 use App\Http\Controllers\SousCategorieC;
 use App\Http\Controllers\ProduitsC;
@@ -43,6 +43,22 @@ Route::post('saveSCategory', [SousCategorieC::class, 'savesousCategory']);
 Route::get('modifierSC/{id}', [SousCategorieC::class, 'modifierSousCategorie']);
 Route::post('modifierSCategory', [SousCategorieC::class, 'updateSCategory']);
 Route::get('supprimerSC/{id}', [SousCategorieC::class, 'deleteSousCategory']);
+<<<<<<< HEAD
+route::post('/products', [ProductController::class, 'store']);
+
+route::get('/articles', [ArticleController::class, 'showArticles'])->name('articles.index');
+
+Route::get('ajouterP', [ProduitsC::class, 'ajouterproduit']);
+Route::post('saveProduits', [ProduitsC::class, 'saveProduit']);
+//Route::get('/pantalonHomme', 'ProduitsC @indexe')->name('pantalonHomme');
+Route::get('pantalonHomme',[ProduitsC::class,"indexe"]);
+/* route::get('/pantalonHomme',function (){ return view('frontend.pantalon');
+})->name('pantalonHomme'); */
+Route::get('lunettes',[ProduitsC::class,"lunettes"]);
+Route::get('casquettes',[ProduitsC::class,"casquettes"]);
+Route::get('chapeau',[ProduitsC::class,"chapeau"]);
+Route::get('accesoires',[ProduitsC::class,"lunettes"]);
+=======
 Route::get('ajouterP', [ProduitsC::class, 'ajouterproduit']);
 Route::post('saveProduits', [ProduitsC::class, 'saveProduit']);
 Route::get('modifierp/{id}', [ProduitsC::class, 'modifierproduit']);
@@ -64,12 +80,17 @@ Route::middleware(['role:user'])->group(function () {
 Route::post('/confirmer-commande', [CommanddeController::class, 'confirmerCommande'])->name('confirmer_commande');
 Route::get('/panier', [PanierC::class, 'afficherPanier'])->name('panier');
 Route::post('/retirer-du-panier/{id}', [PanierC::class, 'retirerDuPanier'])->name('retirer-du-panier');
+Route::get('/mes-commandes', [CommanddeController::class, 'mesCommandes'])->name('mes_commandes');
+Route::get('/donner-avis/{produit_id}/{commande_id}', [AvisController::class, 'formAvis'])->name('donner_avis');
+Route::post('/submit-avis', [AvisController::class, 'submitAvis'])->name('submit_avis');
 });
+>>>>>>> ef453538f183af11dc860ff7b4dda100842d166c
 
 
 
 
 
+Route::put('/commandes/{id}', [CommanddeController::class, 'update'])->name('commandes.update');
 
 //Route::get('/', function () {
   //  return view('frontend.masterr');

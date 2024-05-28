@@ -20,7 +20,9 @@
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Mode Paiement</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Méthode Livraison</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Date</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">État</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Détails</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -49,7 +51,9 @@
                                         <p class="text-xs font-weight-bold mb-0">{{ $commande->created_at->format('d/m/Y H:i') }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <!-- Détails de la commande -->
+                                        <p class="text-xs font-weight-bold mb-0">{{ $commande->etat }}</p>
+                                    </td>
+                                    <td class="text-center">
                                         <button class="btn btn-link text-dark px-3 mb-0" type="button" data-bs-toggle="collapse" data-bs-target="#details-{{ $commande->id }}" aria-expanded="false" aria-controls="details-{{ $commande->id }}">
                                             <i class="fas fa-info-circle"></i> Voir Détails
                                         </button>
@@ -67,6 +71,17 @@
                                                 </ul>
                                             </div>
                                         </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <form action="{{ route('commandes.update', $commande->id) }}" method="POST">
+                                            @csrf
+                                            @method('PUT')
+                                            <select name="etat" class="form-control">
+                                                <option value="en_traitement" {{ $commande->etat == 'en_traitement' ? 'selected' : '' }}>En traitement</option>
+                                                <option value="livrée" {{ $commande->etat == 'livrée' ? 'selected' : '' }}>Livrée</option>
+                                            </select>
+                                            <button type="submit" class="btn btn-primary mt-2">Mettre à jour</button>
+                                        </form>
                                     </td>
                                 </tr>
                                 @endforeach

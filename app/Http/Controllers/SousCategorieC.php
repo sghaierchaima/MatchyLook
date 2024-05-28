@@ -202,7 +202,7 @@ public function indexe()
      })->get();
  
      // Logique pour récupérer les produits appartenant à une sous-catégorie spécifique
-     $produits = Produit::where('sous_categorie_id', $id)->get();
+     $produits = Produit::with('avis')->where('sous_categorie_id', $id)->get();
  
      // Passer les données à la vue, y compris la sous-catégorie active
      return view('frontend.produitBySousCategories', [
@@ -224,7 +224,7 @@ public function indexe()
      })->get();
  
      // Logique pour récupérer les produits appartenant à une sous-catégorie spécifique
-     $produits = Produit::where('sous_categorie_id', $id)->get();
+     $produits = Produit::with('avis')->where('sous_categorie_id', $id)->get();
  
      // Passer les données à la vue, y compris la sous-catégorie active
      return view('frontend.produitBySousCategoriesf', [
@@ -273,7 +273,7 @@ public function indexe()
      })->get();
  
      // Logique pour récupérer les produits appartenant à une sous-catégorie spécifique
-     $produits = Produit::where('sous_categorie_id', $id)->get();
+     $produits = Produit::with('avis')->where('sous_categorie_id', $id)->get();
  
      // Passer les données à la vue, y compris la sous-catégorie active
      return view('frontend.produitBySousCategoriesa', [
@@ -281,5 +281,10 @@ public function indexe()
          'produits' => $produits,
          'activeSubcategoryId' => $sousCategorieActive->id
      ]);
+ }
+ public function showw($id)
+ {
+     $produit = Produit::with('avis.utilisateur')->findOrFail($id);
+     return view('frontend.accueil', compact('produit'));
  }
 }

@@ -158,7 +158,7 @@ public function ajouterAuPanier(Request $request, $produitId)
 
         // Vérifier si la quantité choisie dépasse la quantité disponible
         if ($quantiteChoisie > $produit->quantite) {
-            return response()->json(['error' => 'Quantité de produit insuffisante.'], 400);
+            return response()->json(['error' => 'la quantité  n\'est pas disponible.'], 400);
         }
 
         $produitDansPanier = Paniers::where('produit_id', $produitId)
