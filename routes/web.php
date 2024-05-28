@@ -42,15 +42,12 @@ Route::get('produits',[ProduitsC::class,"index"]);
 Route::get('modifierSC/{id}', [SousCategorieC::class, 'modifierSousCategorie']);
 Route::post('modifierSCategory', [SousCategorieC::class, 'updateSCategory']);
 Route::get('supprimerSC/{id}', [SousCategorieC::class, 'deleteSousCategory']);
-
 route::post('/products', [ProductController::class, 'store']);
 
 route::get('/articles', [ArticleController::class, 'showArticles'])->name('articles.index');
 
 Route::get('ajouterP', [ProduitsC::class, 'ajouterproduit']);
 Route::post('saveProduits', [ProduitsC::class, 'saveProduit']);
-
-//Route::get('pantalonHomme',[ProduitsC::class,"indexe"]);
 //Route::get('/pantalonHomme', 'ProduitsC @indexe')->name('pantalonHomme');
 Route::get('pantalonHomme',[ProduitsC::class,"indexe"]);
 /* route::get('/pantalonHomme',function (){ return view('frontend.pantalon');
