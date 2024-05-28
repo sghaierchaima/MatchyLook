@@ -13,10 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('sous_categories', function (Blueprint $table) {
-            //
-             $table->string('nom')->after('categorie_id');
-        });
+        //
     }
 
     /**
@@ -26,8 +23,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('sous_categories', function (Blueprint $table) {
-            //
-        });
+        //
     }
 };
