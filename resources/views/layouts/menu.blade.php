@@ -109,8 +109,10 @@ https://templatemo.com/tm-571-hexashop
 
                            
                             </li>
-                           
-                            <li class="scroll-to-section"><a href="{{route('botman1')}}">MatchyBot</a></li>
+
+                         <li>  <a href="{{ session()->has('loginId') ? route('botman1') : '#' }}" onclick="{{ session()->has('loginId') ? '' : 'alert(\'Vous devez être connecté pour accéder à cette page.\'); window.location.href = \'connexion\'; return false;' }}">MatchyBot</a>
+                         </li>
+
 
                           
 

@@ -12,8 +12,11 @@ class Commandde extends Model
         'adresse_livraison',
         'telephone',
         'mode_paiement',
-        'methode_livraison'
+        'methode_livraison',
+        'etat'
     ];
+    const STATUS_PROCESSING = 'en_traitement';
+    const STATUS_DELIVERED = 'livrée';
     use HasFactory;
     public function detailsCommande()
     {

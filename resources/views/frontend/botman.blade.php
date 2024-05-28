@@ -1,63 +1,59 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>MatchyLook Chatbot</title>
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+@extends('layouts.menu')
+    @section('content')
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <div class="container-fluid">
+    <!-- ***** Main Banner Area End ***** -->
 
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
-    <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
-
-    <link rel="stylesheet" href="assets/css/owl-carousel.css">
-
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-    <link rel="stylesheet" href="assets/fontsr/material-design-iconic-font/css/material-design-iconic-font.min.css">
-		<!-- STYLE CSS -->
-		<link rel="stylesheet" href="assets/css/registre.css">
-<style>
-dotlottie-player {
-    width: 250px !important; /* nouvelle largeur */
-  height: 250px !important;
-    margin: auto; /* pour centrer l'élément horizontalement */
-    display: block; /* pour centrer l'élément horizontalement */
-  }</style>
-    </head>
-    <style>
-    .scroll-text {
-        background: #80f2e9;
-        color: #333;
-        font-size: 24px;
-        position: relative; /* Position relative pour déplacer le texte */
-        overflow: hidden; /* Masquer tout dépassement de texte */
-        height: 50px; /* Hauteur du conteneur du texte */
-        line-height: 50px; /* Hauteur de ligne égale à la hauteur du conteneur */
+   <style>
+    body {
+  background-image: url('assets\images\wal.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+    .vdc {
+            
+        position: fixed;
+        right:150px;
+        left: 150px;
+        bottom: 0;
+        width: 55%;
+        height: 100%;
+        z-index: -1000;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 5500px; 
     }
-
-    .scroll-text span {
-        position: absolute; /* Position absolue pour déplacer le texte */
-        width: auto; /* Largeur automatique */
-        height: auto;
-        margin: 0;
-        padding: 0;
-        right: 100%; /* Déplacer le texte à droite */
-        animation: scroll 10s linear infinite; /* Animation de défilement */
-    }
-
-    @keyframes scroll {
-        from {
-            right: 100%; /* Début de l'animation : complètement à droite */
-        }
-        to {
-            right: -100%; /* Fin de l'animation : complètement à gauche */
-        }
-    }
-    
 </style>
+       
+    <div class="wrapper" style="background-image: url('assets/images/bg-registration-form-1.jpg');">
+            <div class="inner">
+                
+                    <video autoplay loop class="">
+                        <source src="assets\images\video\ch.mp4" type="video/mp4"></div>
+                    </video>
+                </div>
+                
+            
+       
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.min.css">
+        
+        
+    
+        <script>
+            var botmanWidget = {
+                aboutText: 'Commencez la conversation avec bonjour ou hi ',
+                introMessage: "Bienvenue chez MatchyLook, je suis votre assistante MatchyBot"
+            };
+        </script>
+       
+       <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
+       
+        </div>     
+@endsection                  
+
 <header class="header-area header-sticky">
     <div class="container">
         <div class="row">
@@ -123,4 +119,5 @@ body.innerHTML += '<p>Paragraphe ajouté au <body></p>';
 
     </script>
 </body>
-</html> 
+</html>
+ 

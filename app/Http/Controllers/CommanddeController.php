@@ -84,10 +84,37 @@ class CommanddeController extends Controller
             return response()->json(['error' => 'Une erreur s\'est produite lors de la confirmation de la commande.'], 500);
         }
     }
+    public function update(Request $request, $id)
+    {
+        $commande = Commandde::find($id);
+
+        if (!$commande) {
+            return redirect()->back()->withErrors(['error' => 'Commande introuvable']);
+        }
+
+        $commande->etat = $request->input('etat');
+        $commande->save();
+
+        return redirect()->back()->with('success', 'État de la commande mis à jour avec succès.');
+    }
     public function indexc()
     {
         // Récupérer toutes les commandes avec leurs détails et l'utilisateur associé
         $commandes = Commandde::with(['utilisateur', 'detailsCommande.produit'])->get();
         return view('layoutsadmin.listeCommande', compact('commandes'));
     }
+    public function mesCommandes()
+{
+    if (session()->has('loginId')) {
+        $userId = session('loginId');
+        $commandes = Commandde::where('utilisateur_id', $userId)
+            ->with('detailsCommande.produit')
+            ->orderBy('created_at', 'desc')
+            ->get();
+
+        return view('frontend.suivez', compact('commandes'));
+    } else {
+        return redirect()->route('connexion')->with('message', 'Vous devez être connecté pour voir vos commandes.');
+    }
+}
 }

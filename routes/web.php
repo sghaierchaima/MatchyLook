@@ -5,7 +5,7 @@ use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\CustomAuthController;
 
 use App\Http\Controllers\ProductController;
-
+use App\Http\Controllers\AvisController;
 use App\Http\Controllers\CategoriesC;
 use App\Http\Controllers\SousCategorieC;
 use App\Http\Controllers\ProduitsC;
@@ -64,12 +64,16 @@ Route::middleware(['role:user'])->group(function () {
 Route::post('/confirmer-commande', [CommanddeController::class, 'confirmerCommande'])->name('confirmer_commande');
 Route::get('/panier', [PanierC::class, 'afficherPanier'])->name('panier');
 Route::post('/retirer-du-panier/{id}', [PanierC::class, 'retirerDuPanier'])->name('retirer-du-panier');
+Route::get('/mes-commandes', [CommanddeController::class, 'mesCommandes'])->name('mes_commandes');
+Route::get('/donner-avis/{produit_id}/{commande_id}', [AvisController::class, 'formAvis'])->name('donner_avis');
+Route::post('/submit-avis', [AvisController::class, 'submitAvis'])->name('submit_avis');
 });
 
 
 
 
 
+Route::put('/commandes/{id}', [CommanddeController::class, 'update'])->name('commandes.update');
 
 
 

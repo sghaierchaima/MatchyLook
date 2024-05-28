@@ -84,7 +84,10 @@
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                         </ul>
-                        
+                        <h2>Avis:</h2>
+                        @foreach($produit->avis as $avis)
+                <li><strong>{{ $avis->utilisateur->nom }} {{ $avis->utilisateur->prenom }}:</strong>     {{ $avis->avis }} - Note: {{ $avis->note }}/5  </li>
+            @endforeach 
                     </div>
                 </div>
             </div>
