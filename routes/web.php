@@ -92,6 +92,9 @@ Route::post('/submit-avis', [AvisController::class, 'submitAvis'])->name('submit
 
 Route::put('/commandes/{id}', [CommanddeController::class, 'update'])->name('commandes.update');
 
+//Route::get('/', function () {
+  //  return view('frontend.masterr');
+//})->name('home');
 
 
 Route::get('masterr', [ProduitsC::class, 'master']);
@@ -148,6 +151,8 @@ route::get('/master',function(){
     return view('frontend.master');
 })->name('master');
 
+
+
 route::get('/about',function(){
     
     return view('frontend.about');
@@ -158,7 +163,9 @@ route::get('/all',function(){
 
 
 
-
+route::get('/pack',function(){
+    return view('frontend.pack');
+})->name('pack');
 
 
 

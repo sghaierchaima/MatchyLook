@@ -105,12 +105,22 @@ class GenreConversation extends Conversation
                 // Envoyer une image de pulls
                 $imagePath = 'assets\images\femme_pull\ch.jpg';
                 $this->sendImage($imagePath);
+<<<<<<< HEAD
+                $this->say('Si vous avez besoin d\'autres recommandations plus personnalisées, essayez notre pack "Twinty" ou "Matchy".');
+
+=======
+>>>>>>> 4c245a5734c413397f6ccc6def528e156cc00b3f
             } elseif ($typeVetements == 'pantalons'|| $typeVetements == 'pantalon') {
                 $this->say('Je vous recommande des pantalons ' . $saison . ' pour ' . $genre . '.');
 
                 // Envoyer une image de pantalons
                 $imagePath = 'assets\images\femme_pantalon\gris.jpg';
                 $this->sendImage($imagePath);
+<<<<<<< HEAD
+                $this->say('Si vous avez besoin d\'autres recommandations plus personnalisées, essayez notre pack "Twinty" ou "Matchy".');
+
+=======
+>>>>>>> 4c245a5734c413397f6ccc6def528e156cc00b3f
                 
   
             } else {
@@ -133,12 +143,16 @@ class GenreConversation extends Conversation
                 // Envoyer une image de pulls
                 $imagePath = 'assets\images\femme_pull\capucheBleuMarineF.jpg';
                 $this->sendImage($imagePath);
+                $this->say('Si vous avez besoin d\'autres recommandations plus personnalisées, essayez notre pack "Twinty" ou "Matchy".');
+
             } elseif ($typeVetements == 'pantalons') {
                 $this->say('Je vous recommande des pantalons ' . $saison . ' pour ' . $genre . '.');
 
                 // Envoyer une image de pantalons
                 $imagePath = 'assets\images\femme_pantalon\87cbb1537231417ea1e8357be86966e1.jpg';
                 $this->sendImage($imagePath);
+                $this->say('Si vous avez besoin d\'autres recommandations plus personnalisées, essayez notre pack "Twinty" ou "Matchy".');
+
             } else {
                 $this->say('Je peux recommander soit des pulls soit des pantalons. Veuillez choisir l\'un d\'entre eux.');
                 $this->saisieVetements($genre, $saison);
@@ -158,12 +172,18 @@ class GenreConversation extends Conversation
                 // Envoyer une image de pulls
                 $imagePath = 'assets\images\homme_pull\capucheBleuMarine.jpg';
                 $this->sendImage($imagePath);
+                $this->say('Si vous avez besoin d\'autres recommandations plus personnalisées, essayez notre pack "Twinty" ou "Matchy".');
+
             } elseif ($typeVetements == 'pantalons') {
                 $this->say('Je vous recommande des pantalons ' . $saison . ' pour ' . $genre . '.');
+                $this->say('Si vous avez besoin d\'autres recommandations plus personnalisées, essayez notre pack "Twinty" ou "Matchy".');
+
 
                 // Envoyer une image de pantalons
                 $imagePath = 'assets\images\homme_pantalon\hommePN.jpg';
                 $this->sendImage($imagePath);
+                $this->say('Si vous avez besoin d\'autres recommandations plus personnalisées, essayez notre pack "Twinty" ou "Matchy".');
+
             } else {
                 $this->say('Je peux recommander soit des pulls soit des pantalons. Veuillez choisir l\'un d\'entre eux.');
                 $this->saisieVetements($genre, $saison);
@@ -185,6 +205,8 @@ class GenreConversation extends Conversation
                 // Envoyer une image de pulls
                 $imagePath = 'assets\images\homme_pull\a23.jpg';
                 $this->sendImage($imagePath);
+                $this->say('Si vous avez besoin d\'autres recommandations plus personnalisées, essayez notre pack "Twinty" ou "Matchy".');
+
             } elseif ($typeVetements == 'pantalons') {
                 $this->say('Je vous recommande des pantalons ' . $saison . ' pour ' . $genre . '.');
 
@@ -219,4 +241,8 @@ class GenreConversation extends Conversation
 }
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4c245a5734c413397f6ccc6def528e156cc00b3f

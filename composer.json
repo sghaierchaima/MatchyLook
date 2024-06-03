@@ -79,7 +79,12 @@
         "preferred-install": "dist",
         "sort-packages": true,
 <<<<<<< HEAD
+        "disable-tls": true,
+        
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> 4c245a5734c413397f6ccc6def528e156cc00b3f
 
 >>>>>>> ef453538f183af11dc860ff7b4dda100842d166c
         "disable-tls": true,
@@ -90,16 +95,27 @@
     },
 <<<<<<< HEAD
     "minimum-stability": "dev",
+=======
+<<<<<<< HEAD
+    "minimum-stability": "dev",
     "prefer-stable": true
 
  
 =======
    "minimum-stability": "dev",
+>>>>>>> 4c245a5734c413397f6ccc6def528e156cc00b3f
     "prefer-stable": true
 
  
-    
+},
 
+   "minimum-stability": "dev",
+    "prefer-stable": true
+  
+
+<<<<<<< HEAD
+=======
    
 >>>>>>> ef453538f183af11dc860ff7b4dda100842d166c
 }
+>>>>>>> 4c245a5734c413397f6ccc6def528e156cc00b3f

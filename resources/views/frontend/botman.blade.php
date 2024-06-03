@@ -1,3 +1,27 @@
+<<<<<<< HEAD
+
+@extends('layouts.menu')
+    @section('content')
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <div class="container-fluid">
+    <!-- ***** Main Banner Area End ***** -->
+
+
+    <style>
+        .vdc {
+  width: 100%;
+  height: auto;
+}
+    </style>
+
+        <div class="vdc">
+            <video autoplay loop class="vdc">
+                <source src="assets\images\video\ch.mp4" type="video/mp4">
+            </video>
+        </div>
+
+=======
 @extends('layouts.menu')
     @section('content')
     <!-- ***** Main Banner Area Start ***** -->
@@ -37,6 +61,7 @@
                 </div>
                 
             
+>>>>>>> 4c245a5734c413397f6ccc6def528e156cc00b3f
        
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.min.css">
         
@@ -51,7 +76,11 @@
        
        <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
        
+<<<<<<< HEAD
+		</div>     
+=======
         </div>     
+>>>>>>> 4c245a5734c413397f6ccc6def528e156cc00b3f
 @endsection                  
 
 <header class="header-area header-sticky">

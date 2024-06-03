@@ -68,17 +68,20 @@
                             <div class="col-lg-6">
                                 <div class="right-first-image">
                                     <div class="thumb">
-                                        <div class="inner-content">
-                                            <h4>Promotion</h4>
-                                            <span>Meilleure Promo 
-                                            </span>
+                                        <div class="inner-content">  
+                                            <div class="main-border-button">
+                
+                                                    <a href="{{url('pack')}}">Découvrir !</a>
+                
+                                                </div>
                                         </div>
                                         <div class="hover-content">
                                             <div class="inner">
-                                                <h4>Promotion</h4>
-                                                <p>Promotion d'Hiver 2024</p>
+                                               
                                                 <div class="main-border-button">
-                                                    Découvrir plus
+                
+                                                    <a href="{{url('pack')}}">Découvrir !</a>
+                
                                                 </div>
                                             </div>
                                         </div>
